@@ -103,6 +103,30 @@ function collectSourceFiles() {
       }
     }
   }
+  // 兜底：若常规位置未找到报告，则递归搜索 Documents 下的常见报告目录
+  if (found.size === 0) {
+    const roots = ['C:/Users/Administrator/Documents/codex项目', 'C:/Users/Administrator/Documents/Codex'];
+    const walk = (dir, depth) => {
+      if (depth > 4) return;
+      let entries = [];
+      try { entries = fs.readdirSync(dir, { withFileTypes: true }); } catch (e) { return; }
+      for (const ent of entries) {
+        const full = path.join(dir, ent.name);
+        if (ent.isDirectory()) walk(full, depth + 1);
+        else {
+          for (const ptn of PATTERNS) {
+            if (ptn.re.test(ent.name)) {
+              const st = fs.statSync(full);
+              if (!found.has(ent.name) || st.mtimeMs > found.get(ent.name).mtimeMs) {
+                found.set(ent.name, { name: ent.name, date: ent.name.match(/(\d{4}-\d{2}(?:-\d{2})?)/)[1], type: ptn.type, label: ptn.label, icon: ptn.icon, full, mtimeMs: st.mtimeMs });
+              }
+            }
+          }
+        }
+      }
+    };
+    roots.forEach(r => { if (fs.existsSync(r)) walk(r, 0); });
+  }
   return [...found.values()].sort((a, b) => b.date.localeCompare(a.date));
 }
 
@@ -232,4 +256,5 @@ window.__REPORT_DATA__ = { updated: ${JSON.stringify(now)}, items: [${listHtml}]
 }
 
 main();
+
 
