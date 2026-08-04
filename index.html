@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub 热门项目情报站</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="hero">
+  <h1>GitHub 热门项目情报站</h1>
+  <p>每日 · 每周 · 每月 自动追踪热门开源项目，助力学习与 AI 客户端能力强化</p>
+  <div class="updated" id="updated">最后更新：2026-08-04T12:41:49.155Z</div>
+</header>
+<section class="stats" id="stats">
+  <div class="stat"><b>1</b><span>每日日报</span></div>
+  <div class="stat"><b>1</b><span>每周汇总</span></div>
+  <div class="stat"><b>0</b><span>月度总结</span></div>
+  <div class="stat"><b>2</b><span>报告总数</span></div>
+</section>
+<div class="controls">
+  <div class="filters" id="filters">
+    <button data-filter="all" class="active">全部</button>
+    <button data-filter="daily">📄 每日日报</button>
+    <button data-filter="weekly">📊 每周汇总</button>
+    <button data-filter="monthly">📈 月度总结</button>
+  </div>
+  <input id="search" type="search" placeholder="搜索项目 / 关键词…" autocomplete="off">
+</div>
+<main id="cards" class="cards"></main>
+<footer class="site-footer">
+  <p>数据来源：GitHub Trending + GitHub API · 由 Codex 自动收集整理</p>
+  <p>网站每 60 秒自动检查更新；也可点击 <button id="refresh" class="link-btn">手动刷新</button></p>
+</footer>
+<script>
+window.__REPORT_DATA__ = { updated: "2026-08-04T12:41:49.155Z", items: [{
+    name: "GitHub每周潜力项目汇总_2026-08-04.md",
+    html: "GitHub每周潜力项目汇总_2026-08-04.html",
+    type: "weekly",
+    label: "每周汇总",
+    icon: "📊",
+    date: "2026-08-04",
+    title: "GitHub 每周潜力项目汇总 · 第 1 周（2026-08-04 起）",
+    summary: "本汇总由 Codex 每周自动生成：把本周每日收集的 GitHub 热门项目做一次横向汇总， 重点找出具有潜力的项目——尤其是能直接安装为 Skill / 插件 / MCP / CLI， 用来强化 AI 客户端（Claude Code、Codex、Cursor、Cline 等）能力的项目。 数据来源：本周每日日报 + "
+  },
+  {
+    name: "GitHub每日热门日报_2026-08-04.md",
+    html: "GitHub每日热门日报_2026-08-04.html",
+    type: "daily",
+    label: "每日日报",
+    icon: "📄",
+    date: "2026-08-04",
+    title: "GitHub 每日热门项目日报 · 2026-08-04（周二）",
+    summary: "本日报从 GitHub 当日热度榜（Trending / 当日新增 Star 最多的项目）中筛选出 16 个高关注项目， 逐一对内容、作用、适用场景、快速上手做了梳理，方便您快速了解业界热点并学习使用。 数据来源：GitHub Trending（daily）+ GitHub API。"
+  }] };
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>
