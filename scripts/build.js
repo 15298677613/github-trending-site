@@ -149,8 +149,20 @@ function makeReportPage(meta, md) {
   <span class="badge ${meta.type}">${meta.icon} ${meta.label}</span>
   <span class="date">${date}</span>
 </header>
+<div class="export-toolbar">
+  <span class="export-label">导出本报告：</span>
+  <button id="export-pdf" class="export-btn">PDF</button>
+  <button id="export-excel" class="export-btn">Excel</button>
+  <button id="export-ppt" class="export-btn">PPT</button>
+  <span id="export-status" class="export-status"></span>
+</div>
 <main class="report-main">${body}</main>
 <footer class="site-footer">GitHub 热门项目情报站 · 自动生成于 ${meta.buildTime}</footer>
+<script src="../assets/vendor/jspdf.umd.min.js"></script>
+<script src="../assets/vendor/html2canvas.min.js"></script>
+<script src="../assets/vendor/xlsx.full.min.js"></script>
+<script src="../assets/vendor/pptxgen.bundle.js"></script>
+<script src="../assets/export.js"></script>
 </body>
 </html>`;
 }
@@ -256,5 +268,7 @@ window.__REPORT_DATA__ = { updated: ${JSON.stringify(now)}, items: [${listHtml}]
 }
 
 main();
+
+
 
 

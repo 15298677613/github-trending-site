@@ -12,6 +12,13 @@
   <span class="badge daily">📄 每日日报</span>
   <span class="date">2026-08-04</span>
 </header>
+<div class="export-toolbar">
+  <span class="export-label">导出本报告：</span>
+  <button id="export-pdf" class="export-btn">PDF</button>
+  <button id="export-excel" class="export-btn">Excel</button>
+  <button id="export-ppt" class="export-btn">PPT</button>
+  <span id="export-status" class="export-status"></span>
+</div>
 <main class="report-main"><h1>GitHub 每日热门项目日报 · 2026-08-04（周二）</h1>
 <blockquote>本日报从 GitHub 当日热度榜（Trending / 当日新增 Star 最多的项目）中筛选出 16 个高关注项目， 逐一对<strong>内容、作用、适用场景、快速上手</strong>做了梳理，方便您快速了解业界热点并学习使用。 数据来源：GitHub Trending（daily）+ GitHub API。</blockquote>
 <hr>
@@ -165,5 +172,10 @@
 <hr>
 <p><em>日报生成时间：2026-08-04 · 由 Codex 自动整理，数据来自 GitHub Trending 与 GitHub API</em></p></main>
 <footer class="site-footer">GitHub 热门项目情报站 · 自动生成于 undefined</footer>
+<script src="../assets/vendor/jspdf.umd.min.js"></script>
+<script src="../assets/vendor/html2canvas.min.js"></script>
+<script src="../assets/vendor/xlsx.full.min.js"></script>
+<script src="../assets/vendor/pptxgen.bundle.js"></script>
+<script src="../assets/export.js"></script>
 </body>
 </html>

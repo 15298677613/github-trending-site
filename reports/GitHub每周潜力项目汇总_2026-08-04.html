@@ -12,6 +12,13 @@
   <span class="badge weekly">📊 每周汇总</span>
   <span class="date">2026-08-04</span>
 </header>
+<div class="export-toolbar">
+  <span class="export-label">导出本报告：</span>
+  <button id="export-pdf" class="export-btn">PDF</button>
+  <button id="export-excel" class="export-btn">Excel</button>
+  <button id="export-ppt" class="export-btn">PPT</button>
+  <span id="export-status" class="export-status"></span>
+</div>
 <main class="report-main"><h1>GitHub 每周潜力项目汇总 · 第 1 周（2026-08-04 起）</h1>
 <blockquote>本汇总由 Codex 每周自动生成：把本周每日收集的 GitHub 热门项目做一次横向汇总， 重点找出<strong>具有潜力</strong>的项目——尤其是能直接安装为 Skill / 插件 / MCP / CLI， 用来<strong>强化 AI 客户端（Claude Code、Codex、Cursor、Cline 等）能力</strong>的项目。 数据来源：本周每日日报 + GitHub API 补全。</blockquote>
 <hr>
@@ -105,5 +112,10 @@
 <hr>
 <p><em>周报生成时间：2026-08-04 · 由 Codex 自动汇总，数据来自本周每日 GitHub 热门日报与 GitHub API</em></p></main>
 <footer class="site-footer">GitHub 热门项目情报站 · 自动生成于 undefined</footer>
+<script src="../assets/vendor/jspdf.umd.min.js"></script>
+<script src="../assets/vendor/html2canvas.min.js"></script>
+<script src="../assets/vendor/xlsx.full.min.js"></script>
+<script src="../assets/vendor/pptxgen.bundle.js"></script>
+<script src="../assets/export.js"></script>
 </body>
 </html>
