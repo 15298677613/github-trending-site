@@ -111,7 +111,10 @@
           el = el.nextElementSibling;
         }
         if (bullets.length) {
-          s.addText(bullets.slice(0, 16), { x: 0.5, y: 1.3, w: 9, h: 5.4, fontSize: 12, bullet: { code: '2022' }, lineSpacingMultiple: 1.15, color: '24292F' });
+          var items = bullets.slice(0, 16).map(function (t) {
+            return { text: t, options: { bullet: { code: '2022' }, breakLine: true } };
+          });
+          s.addText(items, { x: 0.5, y: 1.3, w: 9, h: 5.4, fontSize: 12, color: '24292F', valign: 'top' });
         }
       });
       pptx.writeFile({ fileName: filename('.pptx') });
@@ -126,3 +129,4 @@
   if (btnExcel) btnExcel.addEventListener('click', exportExcel);
   if (btnPpt) btnPpt.addEventListener('click', exportPPT);
 })();
+
