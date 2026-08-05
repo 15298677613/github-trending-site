@@ -163,7 +163,23 @@ function makeReportPage(meta, md) {
 <script src="../assets/vendor/xlsx.full.min.js"></script>
 <script src="../assets/vendor/pptxgen.bundle.js"></script>
 <script src="../assets/export.js"></script>
-</body>
+<script>
+(function () {
+  var last = null;
+  function check() {
+    fetch('../version.json', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (v) {
+        if (!v || !v.updated) return;
+        if (last && v.updated !== last) location.reload();
+        last = v.updated;
+      })
+      .catch(function () {});
+  }
+  check();
+  setInterval(check, 60000);
+})();
+</script></body>
 </html>`;
 }
 
@@ -268,6 +284,7 @@ window.__REPORT_DATA__ = { updated: ${JSON.stringify(now)}, items: [${listHtml}]
 }
 
 main();
+
 
 
 

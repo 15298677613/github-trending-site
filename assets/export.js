@@ -5,22 +5,58 @@
   if (!main) return;
 
   var statusEl = document.getElementById('export-status');
+
   function status(msg, isErr) {
     if (!statusEl) return;
     statusEl.textContent = msg;
     statusEl.style.color = isErr ? '#cf222e' : '#1f883d';
-    if (!isErr) setTimeout(function () { statusEl.textContent = ''; }, 6000);
+    // 错误信息常驻显示，便于排查；成功信息稍后自动清空
+    if (!isErr) {
+      setTimeout(function () { if (statusEl.getAttribute('data-keep') !== '1') statusEl.textContent = ''; }, 8000);
+    }
   }
+
   function filename(ext) {
     var t = (document.title || '报告').replace(/[\\/:*?"<>|]/g, '_').replace(/ · /g, '_').replace(/\s+/g, '_');
     return t + ext;
+  }
+
+  // 自动下载（多数浏览器/应用内浏览器可用）
+  function autoDownload(blob, name) {
+    try {
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = name;
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function () { document.body.removeChild(a); URL.revokeObjectURL(url); }, 8000);
+      return true;
+    } catch (e) { return false; }
+  }
+
+  // 双保险：同时显示一个可点击的下载链接（用户主动点击，任何环境都可用）
+  function showDownloadLink(blob, name) {
+    if (!statusEl) return;
+    try {
+      var url = URL.createObjectURL(blob);
+      statusEl.setAttribute('data-keep', '1');
+      statusEl.style.color = '#1f883d';
+      statusEl.innerHTML = '文件已生成，若未自动下载，<a href="' + url + '" download="' + name + '" style="color:#0969da;font-weight:bold;text-decoration:underline;">点击这里下载</a>';
+    } catch (e) { /* ignore */ }
+  }
+
+  function done(blob, name) {
+    autoDownload(blob, name);
+    showDownloadLink(blob, name);
   }
 
   // ---------- PDF ----------
   async function exportPDF() {
     try {
       status('正在生成 PDF…');
-      if (!window.jspdf || !window.html2canvas) { status('PDF 组件未加载，请刷新重试', true); return; }
+      if (!window.jspdf || !window.html2canvas) { status('PDF 组件未加载，请刷新页面重试', true); return; }
       var { jsPDF } = window.jspdf;
       var clone = main.cloneNode(true);
       var wrapper = document.createElement('div');
@@ -44,8 +80,9 @@
         pdf.addImage(imgData, 'JPEG', 0, pos, pageW, imgH);
         left -= pageH;
       }
-      pdf.save(filename('.pdf'));
+      var blob = pdf.output('blob');
       status('PDF 已生成 ✓');
+      done(blob, filename('.pdf'));
     } catch (e) { status('PDF 生成失败：' + e.message, true); }
   }
 
@@ -53,7 +90,7 @@
   function exportExcel() {
     try {
       status('正在生成 Excel…');
-      if (!window.XLSX) { status('Excel 组件未加载，请刷新重试', true); return; }
+      if (!window.XLSX) { status('Excel 组件未加载，请刷新页面重试', true); return; }
       var tables = main.querySelectorAll('table');
       if (!tables.length) { status('本报告没有可导出的表格', true); return; }
       var wb = XLSX.utils.book_new();
@@ -67,16 +104,18 @@
         var ws = XLSX.utils.aoa_to_sheet(rows);
         XLSX.utils.book_append_sheet(wb, ws, '表格' + (i + 1));
       });
-      XLSX.writeFile(wb, filename('.xlsx'));
+      var out = XLSX.write(wb, { type: 'array', bookType: 'xlsx' });
+      var blob = new Blob([out], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
       status('Excel 已生成 ✓');
+      done(blob, filename('.xlsx'));
     } catch (e) { status('Excel 生成失败：' + e.message, true); }
   }
 
   // ---------- PPT ----------
-  function exportPPT() {
+  async function exportPPT() {
     try {
       status('正在生成 PPT…');
-      if (!window.PptxGenJS) { status('PPT 组件未加载，请刷新重试', true); return; }
+      if (!window.PptxGenJS) { status('PPT 组件未加载，请刷新页面重试', true); return; }
       var pptx = new PptxGenJS();
       var title = (document.title || '报告').replace(' | GitHub 热门项目情报站', '');
       var slide = pptx.addSlide();
@@ -117,8 +156,9 @@
           s.addText(items, { x: 0.5, y: 1.3, w: 9, h: 5.4, fontSize: 12, color: '24292F', valign: 'top' });
         }
       });
-      pptx.writeFile({ fileName: filename('.pptx') });
+      var blob = await pptx.write('blob');
       status('PPT 已生成 ✓');
+      done(blob, filename('.pptx'));
     } catch (e) { status('PPT 生成失败：' + e.message, true); }
   }
 
