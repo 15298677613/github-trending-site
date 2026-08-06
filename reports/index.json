@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06T03:57:38.838Z",
+  "updated": "2026-08-06T05:37:00.135Z",
   "items": [
     {
       "name": "GitHub每日热门日报_2026-08-06.md",
@@ -22,17 +22,6 @@
       "title": "GitHub 每日热门项目日报 · 2026-08-05（周三）",
       "summary": "本日报从 GitHub 当日热度榜（Trending / 当日新增 Star 最多的项目）中筛选出 18 个高关注项目， 逐一对内容、作用、适用场景、快速上手做了梳理。 数据来源：GitHub Trending（daily）+ GitHub API。",
       "source": "C:\\Users\\Administrator\\Documents\\codex项目\\GitHub热门项目\\GitHub每日热门日报_2026-08-05.md"
-    },
-    {
-      "name": "GitHub每周潜力项目汇总_2026-08-04.md",
-      "html": "GitHub每周潜力项目汇总_2026-08-04.html",
-      "type": "weekly",
-      "label": "每周汇总",
-      "icon": "📊",
-      "date": "2026-08-04",
-      "title": "GitHub 每周潜力项目汇总 · 第 1 周（2026-08-04 起）",
-      "summary": "本汇总由 Codex 每周自动生成：把本周每日收集的 GitHub 热门项目做一次横向汇总， 重点找出具有潜力的项目——尤其是能直接安装为 Skill / 插件 / MCP / CLI， 用来强化 AI 客户端（Claude Code、Codex、Cursor、Cline 等）能力的项目。 数据来源：本周每日日报 + ",
-      "source": "C:\\Users\\Administrator\\Documents\\codex项目\\GitHub热门项目\\GitHub每周潜力项目汇总_2026-08-04.md"
     },
     {
       "name": "GitHub每日热门日报_2026-08-04.md",
