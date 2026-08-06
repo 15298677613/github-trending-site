@@ -1,6 +1,17 @@
 {
-  "updated": "2026-08-05T06:53:20.964Z",
+  "updated": "2026-08-06T03:52:56.580Z",
   "items": [
+    {
+      "name": "GitHub每日热门日报_2026-08-06.md",
+      "html": "GitHub每日热门日报_2026-08-06.html",
+      "type": "daily",
+      "label": "每日日报",
+      "icon": "📄",
+      "date": "2026-08-06",
+      "title": "GitHub 每日热门项目日报 · 2026-08-06（周四）",
+      "summary": "本日报从 GitHub 当日热度榜（Trending / 当日新增 Star 最多的项目）中筛选出 13 个高关注项目， 逐一对内容、作用、适用场景、快速上手做了梳理。 数据来源：GitHub Trending（daily）+ GitHub API。",
+      "source": "C:\\Users\\Administrator\\Documents\\codex项目\\GitHub热门项目\\GitHub每日热门日报_2026-08-06.md"
+    },
     {
       "name": "GitHub每日热门日报_2026-08-05.md",
       "html": "GitHub每日热门日报_2026-08-05.html",
