@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub 每日热门项目日报 · 2026-08-07（周五）</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="report-page">
+<header class="report-top">
+  <a class="back" href="../index.html">← 返回首页</a>
+  <span class="badge daily">📄 每日日报</span>
+  <span class="date">2026-08-07</span>
+</header>
+<div class="export-toolbar">
+  <span class="export-label">导出本报告：</span>
+  <button id="export-pdf" class="export-btn">PDF</button>
+  <button id="export-excel" class="export-btn">Excel</button>
+  <button id="export-ppt" class="export-btn">PPT</button>
+  <span id="export-status" class="export-status"></span>
+</div>
+<main class="report-main"><h1>GitHub 每日热门项目日报 · 2026-08-07（周五）</h1>
+<blockquote>本日报从 GitHub 当日热度榜（Trending / 当日新增 Star 最多的项目）中筛选出 13 个高关注项目， 逐一对<strong>内容、作用、适用场景、快速上手</strong>做了梳理。 数据来源：GitHub Trending（daily）+ GitHub API。</blockquote>
+<hr>
+<h2>📊 今日概览</h2>
+<ul>
+<li><strong>上榜项目数</strong>：13 个</li>
+<li><strong>今日新增 Star 最多 TOP3</strong>：</li>
+</ul>
+<ol>
+<li><code>cloudflare/computer</code>（+2,802）— 给 AI Agent 一台虚拟电脑</li>
+<li><code>mattpocock/skills</code>（+1,873）— 真实工程师的 Agent 技能包</li>
+<li><code>firecrawl/pdf-inspector</code>（+1,190）— 高性能 PDF 解析库</li>
+</ol>
+<ul>
+<li><strong>今日热门主题</strong>：AI 客户端技能（连续第 3 天爆火）、AI Agent 基础设施</li>
+</ul>
+<p><strong>榜单速览（按今日新增热度排序）</strong></p>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>项目</th><th>语言</th><th>总 Star</th><th>今日新增</th><th>一句话定位</th></tr></thead><tbody><tr><td>1</td><td>cloudflare/computer</td><td>TypeScript</td><td>4,854</td><td>+2,802</td><td>给 AI Agent 一台虚拟电脑</td></tr><tr><td>2</td><td>mattpocock/skills</td><td>Shell</td><td>207,178</td><td>+1,873</td><td>真实工程师的 Agent 技能包</td></tr><tr><td>3</td><td>firecrawl/pdf-inspector</td><td>Rust</td><td>12,508</td><td>+1,190</td><td>高性能 PDF 分类与文本提取</td></tr><tr><td>4</td><td>TencentCloud/TencentDB-Agent-Memory</td><td>TypeScript</td><td>16,482</td><td>+1,057</td><td>AI Agent 团队记忆库</td></tr><tr><td>5</td><td>esengine/DeepSeek-Reasonix</td><td>Go</td><td>32,472</td><td>+888</td><td>DeepSeek 终端编程助手</td></tr><tr><td>6</td><td>obra/superpowers</td><td>Shell</td><td>268,132</td><td>+858</td><td>编码 Agent 技能框架与开发方法论</td></tr><tr><td>7</td><td>huangruiteng/loopx</td><td>Python</td><td>2,907</td><td>+847</td><td>长任务 AI Agent 的&quot;循环控制内核&quot;</td></tr><tr><td>8</td><td>addyosmani/agent-skills</td><td>JavaScript</td><td>82,991</td><td>+593</td><td>生产级 AI 编码技能包</td></tr><tr><td>9</td><td>tirth8205/code-review-graph</td><td>Python</td><td>29,056</td><td>+237</td><td>代码智能图谱（MCP，省 token）</td></tr><tr><td>10</td><td>goauthentik/authentik</td><td>Python</td><td>23,147</td><td>+138</td><td>自托管身份认证（SSO）</td></tr><tr><td>11</td><td>TapXWorld/ChinaTextbook</td><td>Roff</td><td>77,158</td><td>+134</td><td>小初高大学 PDF 教材合集</td></tr><tr><td>12</td><td>Significant-Gravitas/AutoGPT</td><td>Python</td><td>186,036</td><td>+37</td><td>开源 AI Agent 鼻祖</td></tr><tr><td>13</td><td>google/guava</td><td>Java</td><td>51,646</td><td>+13</td><td>Google Java 核心工具库</td></tr></tbody></table></div>
+<hr>
+<h2>🤖 一、AI 客户端技能（连续第 3 天最热方向）</h2>
+<h3>1. mattpocock/skills（今日新上榜，热度第 2）</h3>
+<ul>
+<li><strong>内容</strong>：Matt Pocock（知名 TypeScript 教育者）的&quot;真实工程师 Agent 技能包&quot;——直接从他的 <code>.agents</code> 目录开源。和那些&quot;接管整个流程&quot;的框架不同，这些技能<strong>小巧、可组合、易修改</strong>，任何模型/客户端都能用。</li>
+<li><strong>作用</strong>：给 AI 客户端装上真实工程实践中打磨出来的技能，让开发更接近&quot;真工程&quot;而非&quot;瞎写代码&quot;。</li>
+<li><strong>可用在哪些方面</strong>：日常开发、代码规范、可组合技能实践、学习如何写自己的 Agent 技能。</li>
+<li><strong>如何上手</strong>：克隆仓库，把 <code>skills</code> 复制进你的客户端（Claude Code / Codex / Cursor）的 <code>.agents</code> 目录即可按需调用。</li>
+</ul>
+<h3>2. obra/superpowers（连续上榜）</h3>
+<ul>
+<li><strong>内容</strong>：编码 Agent 技能框架 + 软件开发方法论，支持 Claude Code、Codex、Cursor、Gemini CLI 等。</li>
+<li><strong>作用</strong>：让编码 Agent 按规范流程开发，提升质量与稳定性。</li>
+<li><strong>如何上手</strong>：按 README 快速开始，选择客户端执行一条安装命令。</li>
+</ul>
+<h3>3. addyosmani/agent-skills（连续上榜）</h3>
+<ul>
+<li><strong>内容</strong>：Addy Osmani（Chrome 团队）的&quot;生产级工程技能包&quot;：Idea→Spec→Code→Test→QA→Ship 全流程质量关卡。</li>
+<li><strong>作用</strong>：让 AI 编码 Agent 按工业级标准交付。</li>
+<li><strong>如何上手</strong>：克隆仓库，把 skills 安装到客户端即可。</li>
+</ul>
+<hr>
+<h2>🧠 二、AI Agent 基础设施</h2>
+<h3>4. cloudflare/computer（连续上榜，今日热度第 1）</h3>
+<ul>
+<li><strong>内容</strong>：Cloudflare 开源&quot;给 Agent 一台电脑&quot;：跑在 Durable Object 里的虚拟文件系统，SQLite 保存权威状态，通过容器/Isolate 等后端给 AI Agent 真实可操作的电脑环境（真实 Linux、真实二进制、真实网络）。</li>
+<li><strong>作用</strong>：为 AI Agent 提供可编程、可审计、可恢复的执行环境，适合跑长任务和真实软件操作。</li>
+<li><strong>可用在哪些方面</strong>：AI Agent 云端沙箱、自动化运维、浏览器操作、长任务执行。</li>
+<li><strong>如何上手</strong>：阅读 README，按文档在 Cloudflare Workers 上部署试用。</li>
+</ul>
+<h3>5. TencentCloud/TencentDB-Agent-Memory（连续上榜）</h3>
+<ul>
+<li><strong>内容</strong>：腾讯云开源&quot;团队级 Agent 记忆中心&quot;，四类记忆资产（对话/技能/知识/代码图谱），支持向量检索与团队共享。</li>
+<li><strong>作用</strong>：让客户端拥有长期记忆和团队知识库。</li>
+<li><strong>如何上手</strong>：按 README 安装 npm 包，接入 OpenClaw/Hermes 等框架。</li>
+</ul>
+<h3>6. huangruiteng/loopx（连续上榜）</h3>
+<ul>
+<li><strong>内容</strong>：本地优先的&quot;长任务 AI Agent 控制内核&quot;：把目标、关卡、待办、证据、配额、交接稳定保存，让编码 Agent 执行有界回合。</li>
+<li><strong>作用</strong>：解决&quot;Agent 跑长任务易迷失/超预算/无法交接&quot;的问题。</li>
+<li><strong>如何上手</strong>：Python 3.11+，按 README 初始化控制平面即可驱动 Agent。</li>
+</ul>
+<h3>7. tirth8205/code-review-graph（今日新上榜）</h3>
+<ul>
+<li><strong>内容</strong>：本地优先的&quot;代码智能图谱&quot;：用 Tree-sitter 构建代码结构图、增量跟踪变更，通过 <strong>MCP</strong> 给 AI 编程工具精准上下文——代码评审/大仓库场景下可大幅减少 token 消耗。</li>
+<li><strong>作用</strong>：让 AI 评审时&quot;只读该读的部分&quot;，省 token、提精度。</li>
+<li><strong>可用在哪些方面</strong>：代码评审、大仓库 AI 辅助开发、MCP 工具实践。</li>
+<li><strong>如何上手</strong>：按 README 安装（Python），初始化图谱后接入 MCP 客户端即可。</li>
+</ul>
+<hr>
+<h2>🔧 三、开发者工具与生态</h2>
+<h3>8. esengine/DeepSeek-Reasonix（连续上榜）</h3>
+<ul>
+<li><strong>内容</strong>：DeepSeek 原生终端编码 Agent，前缀缓存优化，长会话低成本，支持插件与双模型。</li>
+<li><strong>如何上手</strong>：下载二进制，配置 <code>reasonix.toml</code>，终端运行。</li>
+</ul>
+<h3>9. firecrawl/pdf-inspector（连续上榜）</h3>
+<ul>
+<li><strong>内容</strong>：Rust 高性能 PDF 分类/文本提取库，200ms 内本地转 Markdown，Python/Node/WASM 绑定。</li>
+<li><strong>如何上手</strong>：<code>pip install pdf-inspector</code> 或 <code>npm install @firecrawl/pdf-inspector</code>。</li>
+</ul>
+<h3>10. goauthentik/authentik（今日上榜）</h3>
+<ul>
+<li><strong>内容</strong>：开源自托管身份认证平台（SSO / MFA / 目录），类似企业版身份网关。</li>
+<li><strong>作用</strong>：给自建应用统一接入登录、权限、多因素认证。</li>
+<li><strong>可用在哪些方面</strong>：自建服务统一登录、企业内部应用 SSO、身份安全。</li>
+<li><strong>如何上手</strong>：Docker Compose 一键部署，Web 界面配置应用接入。</li>
+</ul>
+<h3>11. google/guava（常青）</h3>
+<ul>
+<li><strong>内容</strong>：Google 官方 Java 核心工具库（集合、缓存、并发、字符串等）。</li>
+<li><strong>作用</strong>：Java 开发基础设施，几乎所有 Java 项目都会用到。</li>
+<li><strong>如何上手</strong>：Maven/Gradle 引入 <code>com.google.guava:guava</code>。</li>
+</ul>
+<h3>12. Significant-Gravitas/AutoGPT（常青）</h3>
+<ul>
+<li><strong>内容</strong>：开源 AI Agent 的&quot;鼻祖&quot;，让 AI 自主规划并执行任务。</li>
+<li><strong>作用</strong>：学习 Agent 架构与自主任务执行。</li>
+<li><strong>如何上手</strong>：按 README 安装运行，可接多种 LLM。</li>
+</ul>
+<hr>
+<h2>📚 四、学习资源</h2>
+<h3>13. TapXWorld/ChinaTextbook（今日新上榜）</h3>
+<ul>
+<li><strong>内容</strong>：<strong>所有小初高、大学 PDF 教材</strong>的开源合集（人教等各版本），目标是促进教育资源共享、消除教育信息差，帮助海外华人孩子同步国内教材。</li>
+<li><strong>作用</strong>：免费获取正版教材 PDF，适合学生、家长、教育工作者、海外华人。</li>
+<li><strong>可用在哪些方面</strong>：自用学习、家庭教育、教学参考、资料归档。</li>
+<li><strong>如何上手</strong>：直接到仓库按学段/科目/出版社浏览下载 PDF 即可。</li>
+</ul>
+<hr>
+<h2>💡 今日观察与建议</h2>
+<ol>
+<li><strong>&quot;AI 客户端技能&quot;连续 3 天霸榜</strong>：superpowers、agent-skills、mattpocock/skills 三足鼎立——<strong>装技能包已是 AI 开发者的必修课</strong>。建议：三选一先体验（推荐 mattpocock/skills 或 superpowers），再参考它们学着自己写技能。</li>
+<li><strong>Agent 基础设施持续成型</strong>：cloudflare/computer（电脑）、loopx（长任务）、Agent-Memory（记忆）、code-review-graph（代码理解）——&quot;Agent 能安全地长时间干活&quot;是当前最大基建方向。</li>
+<li><strong>连续多日上榜项目</strong>：cloudflare/computer、TencentDB-Agent-Memory、superpowers、agent-skills、pdf-inspector、Reasonix、loopx 值得深入学习。</li>
+<li><strong>学习建议</strong>：想省钱做 AI 代码评审 → code-review-graph；想统一登录自建服务 → authentik；教育资源 → ChinaTextbook。</li>
+</ol>
+<hr>
+<p><em>日报生成时间：2026-08-07 · 由 Codex 自动整理，数据来自 GitHub Trending 与 GitHub API</em></p></main>
+<footer class="site-footer">GitHub 热门项目情报站 · 自动生成于 undefined</footer>
+<script src="../assets/vendor/jspdf.umd.min.js"></script>
+<script src="../assets/vendor/html2canvas.min.js"></script>
+<script src="../assets/vendor/xlsx.full.min.js"></script>
+<script src="../assets/vendor/pptxgen.bundle.js"></script>
+<script src="../assets/export.js"></script>
+<script>
+(function () {
+  var last = null;
+  function check() {
+    fetch('../version.json', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (v) {
+        if (!v || !v.updated) return;
+        if (last && v.updated !== last) location.reload();
+        last = v.updated;
+      })
+      .catch(function () {});
+  }
+  check();
+  setInterval(check, 60000);
+})();
+</script></body>
+</html>
