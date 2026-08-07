@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub 每日热门项目日报 · 2026-08-08（周六）</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="report-page">
+<header class="report-top">
+  <a class="back" href="../index.html">← 返回首页</a>
+  <span class="badge daily">📄 每日日报</span>
+  <span class="date">2026-08-08</span>
+</header>
+<div class="export-toolbar">
+  <span class="export-label">导出本报告：</span>
+  <button id="export-pdf" class="export-btn">PDF</button>
+  <button id="export-excel" class="export-btn">Excel</button>
+  <button id="export-ppt" class="export-btn">PPT</button>
+  <span id="export-status" class="export-status"></span>
+</div>
+<main class="report-main"><h1>GitHub 每日热门项目日报 · 2026-08-08（周六）</h1>
+<blockquote>本日报抓取 GitHub Trending（<code>since=daily</code>）并用 GitHub REST API 补全仓库信息，筛选今日榜单全部 13 个项目。 “今日新增”来自 Trending 页面快照；总 Star、语言、Fork 等来自 API 查询快照（2026-08-08）。</blockquote>
+<h2>今日概览</h2>
+<ul>
+<li><strong>项目数</strong>：13 个</li>
+<li><strong>今日新增 Star TOP3</strong>：<code>cloudflare/computer</code>（+2,802）、<code>mattpocock/skills</code>（+1,873）、<code>firecrawl/pdf-inspector</code>（+1,190）</li>
+<li><strong>主要趋势</strong>：AI 编码 Agent 技能与基础设施继续占据榜单；长任务状态、代码上下文和 Agent 记忆成为明显的工程化方向。</li>
+</ul>
+<h2>榜单速览（按今日新增 Star）</h2>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>项目</th><th>语言</th><th>API 总 Star*</th><th>今日新增</th><th>定位</th></tr></thead><tbody><tr><td>1</td><td><a href="https://github.com/cloudflare/computer" target="_blank" rel="noopener">cloudflare/computer</a></td><td>TypeScript</td><td>5,633</td><td>+2,802</td><td>给 Agent 一台可操作的电脑</td></tr><tr><td>2</td><td><a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">mattpocock/skills</a></td><td>Shell</td><td>208,745</td><td>+1,873</td><td>真实工程师 Agent 技能包</td></tr><tr><td>3</td><td><a href="https://github.com/firecrawl/pdf-inspector" target="_blank" rel="noopener">firecrawl/pdf-inspector</a></td><td>Rust</td><td>13,024</td><td>+1,190</td><td>PDF 分类与文本提取</td></tr><tr><td>4</td><td><a href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener">TencentCloud/TencentDB-Agent-Memory</a></td><td>TypeScript</td><td>17,481</td><td>+1,057</td><td>团队级 Agent 记忆中心</td></tr><tr><td>5</td><td><a href="https://github.com/esengine/DeepSeek-Reasonix" target="_blank" rel="noopener">esengine/DeepSeek-Reasonix</a></td><td>Go</td><td>32,885</td><td>+888</td><td>DeepSeek 终端编码 Agent</td></tr><tr><td>6</td><td><a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">obra/superpowers</a></td><td>Shell</td><td>268,720</td><td>+858</td><td>Agent 技能框架与开发方法论</td></tr><tr><td>7</td><td><a href="https://github.com/huangruiteng/loopx" target="_blank" rel="noopener">huangruiteng/loopx</a></td><td>Python</td><td>3,375</td><td>+847</td><td>长任务 Agent 状态内核</td></tr><tr><td>8</td><td><a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">addyosmani/agent-skills</a></td><td>JavaScript</td><td>83,857</td><td>+593</td><td>生产级编码技能包</td></tr><tr><td>9</td><td><a href="https://github.com/tirth8205/code-review-graph" target="_blank" rel="noopener">tirth8205/code-review-graph</a></td><td>Python</td><td>29,350</td><td>+237</td><td>面向 MCP 的代码智能图谱</td></tr><tr><td>10</td><td><a href="https://github.com/goauthentik/authentik" target="_blank" rel="noopener">goauthentik/authentik</a></td><td>Python</td><td>23,555</td><td>+138</td><td>自托管身份认证与 SSO</td></tr><tr><td>11</td><td><a href="https://github.com/TapXWorld/ChinaTextbook" target="_blank" rel="noopener">TapXWorld/ChinaTextbook</a></td><td>Roff</td><td>77,614</td><td>+134</td><td>中文教材 PDF 资源索引</td></tr><tr><td>12</td><td><a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noopener">Significant-Gravitas/AutoGPT</a></td><td>Python</td><td>186,305</td><td>+37</td><td>开源自主 Agent 平台</td></tr><tr><td>13</td><td><a href="https://github.com/google/guava" target="_blank" rel="noopener">google/guava</a></td><td>Java</td><td>51,755</td><td>+13</td><td>Google Java 核心库</td></tr></tbody></table></div>
+<p>\* API 查询值会随新 Star 持续变化，仅用于本日报截面参考。</p>
+<h2>项目分析</h2>
+<h3>1. cloudflare/computer</h3>
+<ul>
+<li><strong>是什么</strong>：Cloudflare 为 Agent 提供“电脑”抽象的 TypeScript 项目，结合 Durable Objects、持久化文件系统和可替换的容器/隔离后端。</li>
+<li><strong>有什么作用</strong>：让 Agent 能执行真实命令、读写文件、访问网络，并保留可审计、可恢复的状态。</li>
+<li><strong>适用场景</strong>：云端沙箱、浏览器与桌面自动化、自动化运维、需要长时间运行的任务。</li>
+<li><strong>快速上手</strong>：克隆仓库，按 README 配置 Cloudflare Workers/账户，先运行示例 Worker，再选择容器或本地后端。</li>
+</ul>
+<h3>2. mattpocock/skills</h3>
+<ul>
+<li><strong>是什么</strong>：从真实 <code>.agents</code> 目录整理出的可组合工程技能，重点是小而明确的工作单元。</li>
+<li><strong>有什么作用</strong>：把代码规范、调试和交付经验变成 Agent 可调用的提示与流程。</li>
+<li><strong>适用场景</strong>：Claude Code、Codex、Cursor 等客户端的日常开发与技能编写学习。</li>
+<li><strong>快速上手</strong>：克隆仓库，将所需技能目录复制到客户端的 <code>.agents/skills</code>（或对应技能目录），重启客户端后按名称调用。</li>
+</ul>
+<h3>3. firecrawl/pdf-inspector</h3>
+<ul>
+<li><strong>是什么</strong>：Rust 编写的 PDF 检查库，能判断扫描件/文本 PDF 并提取文本，提供 Python、Node 和 WASM 绑定。</li>
+<li><strong>有什么作用</strong>：在进入 OCR、解析或检索流水线前先智能分流，降低处理成本和延迟。</li>
+<li><strong>适用场景</strong>：文档入库、RAG、批量 PDF 分类、网页抓取后的资料清洗。</li>
+<li><strong>快速上手</strong>：按 README 选择 <code>pip</code>、npm 或 Rust 安装包，先对一批 PDF 运行 inspect，再将分类结果接入后续解析器。</li>
+</ul>
+<h3>4. TencentCloud/TencentDB-Agent-Memory</h3>
+<ul>
+<li><strong>是什么</strong>：面向团队的 Agent 记忆中心，把对话、技能、知识库和代码图谱沉淀为可治理资产。</li>
+<li><strong>有什么作用</strong>：支持向量检索、共享和权限控制，让多个 Agent 复用同一套上下文。</li>
+<li><strong>适用场景</strong>：企业知识库、客服/研发 Agent、跨项目长期记忆和团队协作。</li>
+<li><strong>快速上手</strong>：阅读仓库文档部署服务，配置数据库与向量存储，再通过 SDK/API 接入 Agent 框架。</li>
+</ul>
+<h3>5. esengine/DeepSeek-Reasonix</h3>
+<ul>
+<li><strong>是什么</strong>：面向终端的 DeepSeek 原生编码 Agent，围绕前缀缓存和长会话设计，并支持插件化扩展。</li>
+<li><strong>有什么作用</strong>：在命令行中理解代码库、生成修改并执行开发任务，减少重复上下文成本。</li>
+<li><strong>适用场景</strong>：本地编程助手、批量重构、终端自动化和低成本长对话。</li>
+<li><strong>快速上手</strong>：下载对应平台二进制，创建 <code>reasonix.toml</code> 配置模型/密钥，在项目目录运行并从只读任务开始验证。</li>
+</ul>
+<h3>6. obra/superpowers</h3>
+<ul>
+<li><strong>是什么</strong>：跨 Claude Code、Codex、Cursor、Gemini CLI 的 Agent 技能框架与软件开发方法论。</li>
+<li><strong>有什么作用</strong>：把需求澄清、计划、实现、测试和复盘组织成可重复流程。</li>
+<li><strong>适用场景</strong>：个人开发规范、团队 AI 编码流程、复杂功能的质量控制。</li>
+<li><strong>快速上手</strong>：按 README 执行目标客户端的安装命令，先启用计划/测试相关技能，再逐步定制规则。</li>
+</ul>
+<h3>7. huangruiteng/loopx</h3>
+<ul>
+<li><strong>是什么</strong>：本地优先的长任务状态内核，持久化目标、配额、待办、证据日志和交接信息。</li>
+<li><strong>有什么作用</strong>：让 Agent 在有界回合中持续推进，支持自动唤醒、失败恢复与可验证交接。</li>
+<li><strong>适用场景</strong>：跨小时/跨天的编码任务、批处理、多人或多 Agent 协作。</li>
+<li><strong>快速上手</strong>：准备 Python 3.11+，按文档初始化控制平面，定义 goal/todo 和配额后接入 Codex 或 Claude Code。</li>
+</ul>
+<h3>8. addyosmani/agent-skills</h3>
+<ul>
+<li><strong>是什么</strong>：Chrome 团队 Addy Osmani 的生产级编码技能，覆盖 Idea→Spec→Code→Test→QA→Ship。</li>
+<li><strong>有什么作用</strong>：给 Agent 加上工程质量关卡和发布前检查，减少“能跑但不可维护”的代码。</li>
+<li><strong>适用场景</strong>：Web 项目、代码评审、测试补全、发布流程标准化。</li>
+<li><strong>快速上手</strong>：克隆后按 README 安装到客户端技能目录，先运行单个技能，确认团队约定后再启用全流程。</li>
+</ul>
+<h3>9. tirth8205/code-review-graph</h3>
+<ul>
+<li><strong>是什么</strong>：用 Tree-sitter 建立持久化代码图谱，通过 MCP/CLI 向 Agent 提供相关上下文。</li>
+<li><strong>有什么作用</strong>：代码评审时只读取必要的符号和依赖，减少 token 并提高大仓库定位准确度。</li>
+<li><strong>适用场景</strong>：大型仓库评审、增量变更分析、MCP 工具开发与代码导航。</li>
+<li><strong>快速上手</strong>：按 README 安装 Python 依赖，初始化项目图谱，配置 MCP 客户端后对一次 PR 做基准对比。</li>
+</ul>
+<h3>10. goauthentik/authentik</h3>
+<ul>
+<li><strong>是什么</strong>：开源、自托管身份平台，提供 SSO、MFA、目录同步和策略编排。</li>
+<li><strong>有什么作用</strong>：为自建应用集中处理登录、权限和多因素认证，避免每个服务重复造轮子。</li>
+<li><strong>适用场景</strong>：家庭实验室、企业内部工具、开发环境统一登录。</li>
+<li><strong>快速上手</strong>：使用官方 Docker Compose 部署，完成初始管理员配置后创建 Provider/Application，并用 OIDC 或 SAML 接入应用。</li>
+</ul>
+<h3>11. TapXWorld/ChinaTextbook</h3>
+<ul>
+<li><strong>是什么</strong>：按学段、科目和版本整理中文小初高及大学教材 PDF 的开源索引。</li>
+<li><strong>有什么作用</strong>：方便学习资料检索、归档和跨地区教学准备。</li>
+<li><strong>适用场景</strong>：个人学习、家庭教育、教师备课和教育资料整理。下载与使用应遵守当地版权法规。</li>
+<li><strong>快速上手</strong>：进入仓库按目录浏览并下载所需资料，建议为文件记录版本、来源和适用地区。</li>
+</ul>
+<h3>12. Significant-Gravitas/AutoGPT</h3>
+<ul>
+<li><strong>是什么</strong>：较早期开源自主 Agent 平台，包含任务规划、工具调用和可扩展工作流组件。</li>
+<li><strong>有什么作用</strong>：用于研究 Agent 自主执行、任务分解和人机协作模式。</li>
+<li><strong>适用场景</strong>：Agent 原型、自动化实验、学习规划器与工具链设计。</li>
+<li><strong>快速上手</strong>：按 README 准备 Python 环境和模型密钥，先运行示例工作流并限制工具权限，再构建自己的任务。</li>
+</ul>
+<h3>13. google/guava</h3>
+<ul>
+<li><strong>是什么</strong>：Google 维护的 Java 核心工具库，覆盖集合、缓存、并发、字符串、I/O 等常用能力。</li>
+<li><strong>有什么作用</strong>：提供经过广泛验证的基础组件，减少重复实现并提升代码一致性。</li>
+<li><strong>适用场景</strong>：Java 服务端、数据处理、并发编程和遗留系统维护。</li>
+<li><strong>快速上手</strong>：Maven 添加 <code>com.google.guava:guava</code>（或使用 Gradle），从 <code>ImmutableList</code>、<code>Cache</code> 等模块开始，按版本文档迁移 API。</li>
+</ul>
+<h2>今日观察与建议</h2>
+<ol>
+<li><strong>技能包仍是最强主线</strong>：<code>mattpocock/skills</code>、<code>superpowers</code> 和 <code>agent-skills</code> 分别代表可组合技能、流程框架和生产质量关卡，可先选一个客户端实测。</li>
+<li><strong>Agent 基建正在补齐闭环</strong>：<code>computer</code> 提供执行环境，<code>loopx</code> 提供长任务控制，TencentDB 提供记忆，<code>code-review-graph</code> 提供精准上下文。</li>
+<li><strong>落地建议</strong>：个人开发优先尝试技能包；团队项目先建立权限、日志和配额，再接入可执行 Agent。涉及安全、逆向或自动化操作时，仅限获得授权的环境。</li>
+</ol>
+<p><em>日报生成时间：2026-08-08 · 数据来源：GitHub Trending（daily）与 GitHub REST API</em></p></main>
+<footer class="site-footer">GitHub 热门项目情报站 · 自动生成于 undefined</footer>
+<script src="../assets/vendor/jspdf.umd.min.js"></script>
+<script src="../assets/vendor/html2canvas.min.js"></script>
+<script src="../assets/vendor/xlsx.full.min.js"></script>
+<script src="../assets/vendor/pptxgen.bundle.js"></script>
+<script src="../assets/export.js"></script>
+<script>
+(function () {
+  var last = null;
+  function check() {
+    fetch('../version.json', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (v) {
+        if (!v || !v.updated) return;
+        if (last && v.updated !== last) location.reload();
+        last = v.updated;
+      })
+      .catch(function () {});
+  }
+  check();
+  setInterval(check, 60000);
+})();
+</script></body>
+</html>
