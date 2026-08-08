@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub 每日热门项目日报 · 2026-08-09（周日）</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="report-page">
+<header class="report-top">
+  <a class="back" href="../index.html">← 返回首页</a>
+  <span class="badge daily">📄 每日日报</span>
+  <span class="date">2026-08-09</span>
+</header>
+<div class="export-toolbar">
+  <span class="export-label">导出本报告：</span>
+  <button id="export-pdf" class="export-btn">PDF</button>
+  <button id="export-excel" class="export-btn">Excel</button>
+  <button id="export-ppt" class="export-btn">PPT</button>
+  <span id="export-status" class="export-status"></span>
+</div>
+<main class="report-main"><h1>GitHub 每日热门项目日报 · 2026-08-09（周日）</h1>
+<blockquote>数据抓取自 <a href="https://github.com/trending?since=daily" target="_blank" rel="noopener">GitHub Trending</a>，并用 GitHub REST API 补全仓库元数据。榜单按 Trending 页面显示的今日新增 Star 排序；API 数值为 2026-08-09 抓取时的匿名 API 快照。</blockquote>
+<h2>今日概览</h2>
+<ul>
+<li><strong>项目数</strong>：12 个</li>
+<li><strong>今日新增 Star TOP 3</strong>：<code>PrimeIntellect-ai/prime-agent</code>（+2,483）、<code>mattpocock/skills</code>（+1,354）、<code>addyosmani/agent-skills</code>（+778）</li>
+<li><strong>主要趋势</strong>：AI 编程 Agent 的技能包和长任务运行时继续占据榜首；同时出现分布式 Durable Objects、身份平台、独立浏览器和 DevOps 学习资料等基础设施项目。</li>
+<li><strong>筛选口径</strong>：保留 Trending 当日页面返回的全部 12 个仓库（落在用户要求的 10-20 个范围内）。</li>
+</ul>
+<h2>榜单速览（按今日新增 Star）</h2>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>项目</th><th>语言</th><th>API 总 Star</th><th>今日新增</th><th>Fork</th><th>许可证</th></tr></thead><tbody><tr><td>1</td><td><a href="https://github.com/PrimeIntellect-ai/prime-agent" target="_blank" rel="noopener">PrimeIntellect-ai/prime-agent</a></td><td>TypeScript</td><td>8,799</td><td>+2,483</td><td>816</td><td>MIT</td></tr><tr><td>2</td><td><a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">mattpocock/skills</a></td><td>Shell</td><td>209,957</td><td>+1,354</td><td>18,138</td><td>MIT</td></tr><tr><td>3</td><td><a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">addyosmani/agent-skills</a></td><td>JavaScript</td><td>84,517</td><td>+778</td><td>9,081</td><td>MIT</td></tr><tr><td>4</td><td><a href="https://github.com/TapXWorld/ChinaTextbook" target="_blank" rel="noopener">TapXWorld/ChinaTextbook</a></td><td>Roff</td><td>77,900</td><td>+591</td><td>17,633</td><td>未声明</td></tr><tr><td>5</td><td><a href="https://github.com/google/skills" target="_blank" rel="noopener">google/skills</a></td><td>Python</td><td>16,705</td><td>+481</td><td>1,355</td><td>Apache-2.0</td></tr><tr><td>6</td><td><a href="https://github.com/goauthentik/authentik" target="_blank" rel="noopener">goauthentik/authentik</a></td><td>Python</td><td>23,954</td><td>+467</td><td>1,836</td><td>NOASSERTION</td></tr><tr><td>7</td><td><a href="https://github.com/denoland/celld" target="_blank" rel="noopener">denoland/celld</a></td><td>Rust</td><td>2,539</td><td>+432</td><td>71</td><td>Apache-2.0</td></tr><tr><td>8</td><td><a href="https://github.com/bannedbook/fanqiang" target="_blank" rel="noopener">bannedbook/fanqiang</a></td><td>Kotlin</td><td>49,861</td><td>+161</td><td>8,252</td><td>未声明</td></tr><tr><td>9</td><td><a href="https://github.com/TauricResearch/TradingAgents" target="_blank" rel="noopener">TauricResearch/TradingAgents</a></td><td>Python</td><td>96,446</td><td>+126</td><td>18,650</td><td>Apache-2.0</td></tr><tr><td>10</td><td><a href="https://github.com/google/guava" target="_blank" rel="noopener">google/guava</a></td><td>Java</td><td>51,843</td><td>+93</td><td>11,180</td><td>Apache-2.0</td></tr><tr><td>11</td><td><a href="https://github.com/LadybirdBrowser/ladybird" target="_blank" rel="noopener">LadybirdBrowser/ladybird</a></td><td>C++</td><td>64,971</td><td>+79</td><td>3,104</td><td>BSD-2-Clause</td></tr><tr><td>12</td><td><a href="https://github.com/litu54/DevOps-Interview-Guide" target="_blank" rel="noopener">litu54/DevOps-Interview-Guide</a></td><td>未标注</td><td>693</td><td>+59</td><td>880</td><td>未声明</td></tr></tbody></table></div>
+<h2>项目分析</h2>
+<h3>1. PrimeIntellect-ai/prime-agent</h3>
+<ul>
+<li><strong>是什么</strong>：TypeScript 编写的自我改进 RLM（递归语言模型）Agent，定位是编码工作流和长时间自主任务。</li>
+<li><strong>有什么用</strong>：让 Agent 能把任务拆成可迭代步骤，保留中间状态并根据结果继续修正，适合复杂代码库操作。</li>
+<li><strong>适用场景</strong>：长时间重构、自动修复测试、批量仓库维护、需要循环试错的研究型任务。</li>
+<li><strong>快速上手</strong>：克隆仓库，按 README 安装 Node.js 依赖并配置模型凭据；先运行示例任务，再以只读权限测试工具调用和停止条件。</li>
+<li><strong>注意</strong>：自我改进循环可能放大错误，生产环境应限制文件范围、网络权限、预算和最大迭代次数。</li>
+</ul>
+<h3>2. mattpocock/skills</h3>
+<ul>
+<li><strong>是什么</strong>：从真实 <code>.agents</code> 目录整理出的工程技能集合，面向 Codex、Claude Code、Cursor 等编码 Agent。</li>
+<li><strong>有什么用</strong>：把调试、测试、代码审查和交付规范变成可复用的技能指令，减少重复提示词。</li>
+<li><strong>适用场景</strong>：个人开发环境标准化、团队共享 Agent 规范、为新项目建立工程质量检查清单。</li>
+<li><strong>快速上手</strong>：克隆仓库，按 README 将技能目录复制到客户端的 <code>.agents/skills</code>（或对应技能目录），重启客户端后按技能名调用。</li>
+<li><strong>注意</strong>：技能会影响 Agent 行为，启用前审阅其中的命令、权限和外部服务调用。</li>
+</ul>
+<h3>3. addyosmani/agent-skills</h3>
+<ul>
+<li><strong>是什么</strong>：Addy Osmani 维护的生产级 AI 编程技能，覆盖 Idea→Spec→Code→Test→QA→Ship 流程。</li>
+<li><strong>有什么用</strong>：为 Agent 增加需求澄清、实现、测试和发布前检查，适合把“能运行”提升到“可维护”。</li>
+<li><strong>适用场景</strong>：Web 项目开发、PR 审查、回归测试、发布流程标准化。</li>
+<li><strong>快速上手</strong>：<code>git clone https://github.com/addyosmani/agent-skills.git</code>，按 README 安装到目标客户端技能目录，先单独试用一个技能。</li>
+<li><strong>注意</strong>：项目规则应与团队现有 CI、代码风格和发布审批保持一致。</li>
+</ul>
+<h3>4. TapXWorld/ChinaTextbook</h3>
+<ul>
+<li><strong>是什么</strong>：按学段、学科和版本整理的中小学及大学中文教材 PDF 索引。</li>
+<li><strong>有什么用</strong>：集中检索学习资料，便于个人学习、备课和离线归档。</li>
+<li><strong>适用场景</strong>：课程资料查找、教材版本对照、教育资源整理。</li>
+<li><strong>快速上手</strong>：进入仓库目录或 README 链接，按学段和学科找到目标 PDF；下载前核对来源、版本和文件完整性。</li>
+<li><strong>注意</strong>：资料的下载、传播和使用须遵守所在地区版权法规，不要将未授权内容用于商业分发。</li>
+</ul>
+<h3>5. google/skills</h3>
+<ul>
+<li><strong>是什么</strong>：Google 面向其产品和技术发布的 Agent Skills 集合，仓库以 Python 为主。</li>
+<li><strong>有什么用</strong>：为 Agent 提供 Google Cloud、开发工具和产品操作的领域知识与工作流模板。</li>
+<li><strong>适用场景</strong>：Google Cloud 项目运维、API 集成、云资源排障、企业内部自动化。</li>
+<li><strong>快速上手</strong>：按 README 的 Installation 部分安装技能包，将所需技能放入客户端目录；配置最小权限的 Google 凭据后运行示例。</li>
+<li><strong>注意</strong>：云端操作先在测试项目验证，并使用 IAM 最小权限和审计日志。</li>
+</ul>
+<h3>6. goauthentik/authentik</h3>
+<ul>
+<li><strong>是什么</strong>：开源身份与访问管理平台，提供 SSO、OAuth2/OIDC、SAML、MFA、目录同步和反向代理能力。</li>
+<li><strong>有什么用</strong>：集中处理应用登录、用户目录和授权策略，避免每个服务重复实现认证。</li>
+<li><strong>适用场景</strong>：家庭实验室、内部工具、企业统一登录、Kubernetes 与 SaaS 的身份接入。</li>
+<li><strong>快速上手</strong>：按官方 Docker Compose 文档部署，完成管理员初始化后创建 Provider 和 Application，再用 OIDC 或 SAML 接入一个测试应用。</li>
+<li><strong>注意</strong>：<code>NOASSERTION</code> 表示 API 未能确认 SPDX 许可证；生产部署需单独核实版本许可和安全公告。</li>
+</ul>
+<h3>7. denoland/celld</h3>
+<ul>
+<li><strong>是什么</strong>：Rust 实现的自托管、分布式 Durable Objects 服务，为有状态边缘应用提供持久化对象。</li>
+<li><strong>有什么用</strong>：把有状态逻辑部署到自有基础设施，支持对象级并发协调和持久化状态。</li>
+<li><strong>适用场景</strong>：实时协作、房间/会话状态、边缘任务协调、对托管平台有合规要求的团队。</li>
+<li><strong>快速上手</strong>：从 README 的 Install 方式选择二进制或容器；容器可先运行 <code>docker run --rm ghcr.io/denoland/celld --version</code>，再创建状态卷并启动单节点示例。</li>
+<li><strong>注意</strong>：分布式部署前先验证一致性、备份、故障恢复和网络暴露面。</li>
+</ul>
+<h3>8. bannedbook/fanqiang</h3>
+<ul>
+<li><strong>是什么</strong>：按 Windows、iOS、Android、macOS、路由器和 Linux 分类整理的代理/网络工具教程与索引。</li>
+<li><strong>有什么用</strong>：提供客户端安装、配置和排障资料，帮助理解不同代理协议与平台差异。</li>
+<li><strong>适用场景</strong>：合法的网络连通性测试、个人网络故障排查、授权环境中的代理实验。</li>
+<li><strong>快速上手</strong>：先阅读对应平台目录的教程，确认软件来源和校验值，再在隔离设备中按文档配置；不要直接导入未知订阅。</li>
+<li><strong>合规提示</strong>：仅限遵守当地法律和网络管理员授权的场景；安全、代理及逆向相关操作不得用于绕过访问控制或未授权访问。</li>
+</ul>
+<h3>9. TauricResearch/TradingAgents</h3>
+<ul>
+<li><strong>是什么</strong>：基于大语言模型的多 Agent 金融交易研究框架，包含分析师、研究员、交易员和风险管理角色。</li>
+<li><strong>有什么用</strong>：把基本面、情绪、技术指标和风险评估拆成可组合的研究流程，便于实验和回测。</li>
+<li><strong>适用场景</strong>：量化研究原型、策略讨论、Agent 协作实验和教学演示。</li>
+<li><strong>快速上手</strong>：<code>git clone https://github.com/TauricResearch/TradingAgents.git</code>，创建 Python 虚拟环境并执行 <code>pip install .</code>；配置所需模型/数据 API 后运行示例。</li>
+<li><strong>注意</strong>：研究结果不等于投资建议；使用历史数据时要防止数据泄漏，并先在模拟盘验证。</li>
+</ul>
+<h3>10. google/guava</h3>
+<ul>
+<li><strong>是什么</strong>：Google 维护的 Java 核心库，覆盖集合、缓存、并发、字符串、I/O 和不可变数据结构。</li>
+<li><strong>有什么用</strong>：提供经过广泛测试的基础组件，减少重复实现并统一 Java 服务端代码风格。</li>
+<li><strong>适用场景</strong>：Java 服务、数据处理、并发编程和遗留系统维护。</li>
+<li><strong>快速上手</strong>：在 Maven 添加 <code>com.google.guava:guava</code>，或按 README 的 Gradle 依赖声明；从 <code>ImmutableList</code>、<code>Cache</code> 等模块开始，并锁定明确版本。</li>
+<li><strong>注意</strong>：升级时阅读 API 变更和 Android/JDK 兼容性说明，避免把 Guava 类型暴露成不必要的公共接口。</li>
+</ul>
+<h3>11. LadybirdBrowser/ladybird</h3>
+<ul>
+<li><strong>是什么</strong>：从零构建的独立开源 Web 浏览器及浏览器引擎，主要使用 C++。</li>
+<li><strong>有什么用</strong>：探索浏览器渲染、网络、布局和图形栈，减少对现有浏览器内核的依赖。</li>
+<li><strong>适用场景</strong>：浏览器内核学习、图形/编译工具链研究、开源基础设施贡献。</li>
+<li><strong>快速上手</strong>：先阅读“如何构建和运行”文档，按平台安装编译依赖，使用项目推荐的构建脚本生成 Debug 构建后运行测试页面。</li>
+<li><strong>注意</strong>：内核仍在快速开发，日常浏览稳定性和安全边界不应按成熟浏览器假设。</li>
+</ul>
+<h3>12. litu54/DevOps-Interview-Guide</h3>
+<ul>
+<li><strong>是什么</strong>：DevOps 与 SRE 面试题和知识整理，覆盖 Linux、网络、容器、CI/CD、云平台和可观测性等主题。</li>
+<li><strong>有什么用</strong>：作为系统复习清单，帮助定位知识盲区并准备技术面试。</li>
+<li><strong>适用场景</strong>：面试准备、团队培训、SRE 新人入门和运维值班知识补齐。</li>
+<li><strong>快速上手</strong>：按 README 的目录逐章阅读；为每个问题补充自己的命令、故障案例和复盘记录，再用小型实验验证答案。</li>
+<li><strong>注意</strong>：题库内容可能滞后于云产品版本，涉及命令和架构决策时应回到官方文档核验。</li>
+</ul>
+<h2>今日观察与建议</h2>
+<ol>
+<li><strong>Agent 技能正在产品化</strong>：<code>prime-agent</code> 关注长任务运行时，<code>mattpocock/skills</code>、<code>addyosmani/agent-skills</code> 与 <code>google/skills</code> 关注可复用工作流。建议先在低权限沙箱中试用单个技能，再纳入团队规范。</li>
+<li><strong>有状态基础设施成为新热点</strong>：<code>denoland/celld</code> 将 Durable Objects 带到自托管场景，适合关注边缘计算但又需要数据主权的团队。</li>
+<li><strong>基础工具仍有稳定需求</strong>：authentik、Guava、Ladybird 和 DevOps 学习资料的热度说明身份、语言库、浏览器内核和工程人才培养仍是长期投入方向。</li>
+<li><strong>安全与合规</strong>：涉及代理、网络或逆向的项目仅限授权测试；教材和数据资源要核对版权；金融 Agent 只用于研究和模拟，不构成投资建议。</li>
+</ol>
+<h2>数据与复核</h2>
+<ul>
+<li>Trending：&lt;https://github.com/trending?since=daily&gt;</li>
+<li>REST API：<code>GET https://api.github.com/repos/{owner}/{repo}</code>（匿名请求，本日报生成时未检测到 <code>GITHUB_TOKEN</code> 或 Git credential helper）</li>
+<li>抓取日期：2026-08-09（Asia/Shanghai）；Star/Fork 等数值会随时间变化，仅代表本次快照。</li>
+</ul>
+<p><em>日报生成时间：2026-08-09 · 数据来源：GitHub Trending（daily）与 GitHub REST API</em></p></main>
+<footer class="site-footer">GitHub 热门项目情报站 · 自动生成于 undefined</footer>
+<script src="../assets/vendor/jspdf.umd.min.js"></script>
+<script src="../assets/vendor/html2canvas.min.js"></script>
+<script src="../assets/vendor/xlsx.full.min.js"></script>
+<script src="../assets/vendor/pptxgen.bundle.js"></script>
+<script src="../assets/export.js"></script>
+<script>
+(function () {
+  var last = null;
+  function check() {
+    fetch('../version.json', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (v) {
+        if (!v || !v.updated) return;
+        if (last && v.updated !== last) location.reload();
+        last = v.updated;
+      })
+      .catch(function () {});
+  }
+  check();
+  setInterval(check, 60000);
+})();
+</script></body>
+</html>
