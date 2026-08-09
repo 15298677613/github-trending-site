@@ -1,6 +1,17 @@
 {
-  "updated": "2026-08-08T23:08:57.438Z",
+  "updated": "2026-08-09T13:04:56.670Z",
   "items": [
+    {
+      "name": "GitHub每周潜力项目汇总_2026-08-09.md",
+      "html": "GitHub每周潜力项目汇总_2026-08-09.html",
+      "type": "weekly",
+      "label": "每周汇总",
+      "icon": "📊",
+      "date": "2026-08-09",
+      "title": "GitHub 每周潜力项目汇总 · 2026-08-09",
+      "summary": "统计周期：2026-08-04 至 2026-08-09（本周目录内实际已有 6 份日报；2026-08-03 日报缺失）。 数据来源：同期 `GitHub每日热门日报_*.md`，原始榜单来自 GitHub Trending 与 GitHub API。 评级主线：项目能否通过 Skill、插件、MCP、CLI 或 A",
+      "source": "C:\\Users\\Administrator\\Documents\\codex项目\\GitHub热门项目\\GitHub每周潜力项目汇总_2026-08-09.md"
+    },
     {
       "name": "GitHub每日热门日报_2026-08-09.md",
       "html": "GitHub每日热门日报_2026-08-09.html",

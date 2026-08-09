@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub 每周潜力项目汇总 · 2026-08-09</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="report-page">
+<header class="report-top">
+  <a class="back" href="../index.html">← 返回首页</a>
+  <span class="badge weekly">📊 每周汇总</span>
+  <span class="date">2026-08-09</span>
+</header>
+<div class="export-toolbar">
+  <span class="export-label">导出本报告：</span>
+  <button id="export-pdf" class="export-btn">PDF</button>
+  <button id="export-excel" class="export-btn">Excel</button>
+  <button id="export-ppt" class="export-btn">PPT</button>
+  <span id="export-status" class="export-status"></span>
+</div>
+<main class="report-main"><h1>GitHub 每周潜力项目汇总 · 2026-08-09</h1>
+<blockquote>统计周期：2026-08-04 至 2026-08-09（本周目录内实际已有 6 份日报；2026-08-03 日报缺失）。 数据来源：同期 <code>GitHub每日热门日报_*.md</code>，原始榜单来自 GitHub Trending 与 GitHub API。 评级主线：项目能否通过 <strong>Skill、插件、MCP、CLI 或 API/SDK</strong> 强化 Claude Code、Codex、Cursor、Cline 等 AI 客户端。</blockquote>
+<hr>
+<h2>一、本周结论</h2>
+<ul>
+<li><strong>85 条上榜记录，44 个去重项目</strong>；其中 21 个项目重复上榜，23 个仅出现 1 次。</li>
+<li>本周最清晰的主线不是“又一个聊天机器人”，而是给编码 Agent 增加可复用能力：<strong>工程技能、长期记忆、代码图谱、受控执行环境和长任务状态管理</strong>。</li>
+<li>持续性最强的是 <code>TencentDB-Agent-Memory</code>、<code>pdf-inspector</code>、<code>DeepSeek-Reasonix</code>，均上榜 5 天；AI 客户端增强方向中，<code>addyosmani/agent-skills</code>、<code>obra/superpowers</code>、<code>mattpocock/skills</code> 的热度和落地性最突出。</li>
+<li>最值得优先试装的组合是：<strong>工程 Skills + 代码图谱 MCP + 长期记忆</strong>。这三层分别约束工作方法、补充仓库上下文、沉淀跨会话知识，能力互补且不必更换现有客户端。</li>
+<li><code>cloudflare/computer</code>、<code>loopx</code> 代表下一阶段：Agent 不只“会写代码”，还需要可审计的执行环境、持久状态、预算和交接机制。</li>
+</ul>
+<h2>二、统计口径与数据限制</h2>
+<ol>
+<li>“上榜次数”按项目在六份日报榜单表中出现的天数计算，同一天只计一次。</li>
+<li>“总 Star 变化”使用该项目首次与最后一次上榜时的 API 总 Star 快照之差。</li>
+<li>“今日新增”是 Trending 在采集时刻给出的滚动热度指标，<strong>不能跨天直接求和</strong>；部分日报采集时刻不同，因此它与 API 总 Star 变化不会严格相等。</li>
+<li>本周缺少 8 月 3 日日报，结论代表已有六天样本，不等同于完整七天榜单。</li>
+</ol>
+<h2>三、重复上榜与热度趋势</h2>
+<div class="table-wrap"><table><thead><tr><th>项目</th><th>上榜</th><th>首末总 Star</th><th>变化</th><th>每日新增热度轨迹</th><th>判断</th></tr></thead><tbody><tr><td><a href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener">TencentCloud/TencentDB-Agent-Memory</a></td><td>5 天</td><td>12,609 → 17,481</td><td>+4,872</td><td>1,090 → 1,111 → 1,892 → 1,057 → 1,057</td><td>高位持续，记忆基础设施需求明确</td></tr><tr><td><a href="https://github.com/firecrawl/pdf-inspector" target="_blank" rel="noopener">firecrawl/pdf-inspector</a></td><td>5 天</td><td>9,065 → 13,024</td><td>+3,959</td><td>1,699 → 2,540 → 1,582 → 1,190 → 1,190</td><td>峰值后仍在高位，需求稳定</td></tr><tr><td><a href="https://github.com/esengine/DeepSeek-Reasonix" target="_blank" rel="noopener">esengine/DeepSeek-Reasonix</a></td><td>5 天</td><td>30,388 → 32,885</td><td>+2,497</td><td>883 → 922 → 747 → 888 → 888</td><td>稳定，低成本终端 Agent 有固定受众</td></tr><tr><td><a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">addyosmani/agent-skills</a></td><td>4 天</td><td>82,105 → 84,517</td><td>+2,412</td><td>226 → 593 → 593 → 778</td><td>持续升温，本周最强技能包趋势之一</td></tr><tr><td><a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">obra/superpowers</a></td><td>4 天</td><td>266,703 → 268,720</td><td>+2,017</td><td>653 → 931 → 858 → 858</td><td>高位稳定，跨客户端方法论成熟</td></tr><tr><td><a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">mattpocock/skills</a></td><td>3 天</td><td>207,178 → 209,957</td><td>+2,779</td><td>1,873 → 1,873 → 1,354</td><td>热度极高，末日略降但仍强势</td></tr><tr><td><a href="https://github.com/cloudflare/computer" target="_blank" rel="noopener">cloudflare/computer</a></td><td>3 天</td><td>3,566 → 5,633</td><td>+2,067</td><td>891 → 2,802 → 2,802</td><td>快速爆发，执行环境成为新热点</td></tr><tr><td><a href="https://github.com/huangruiteng/loopx" target="_blank" rel="noopener">huangruiteng/loopx</a></td><td>3 天</td><td>2,345 → 3,375</td><td>+1,030</td><td>326 → 847 → 847</td><td>明显升温，长任务控制需求上升</td></tr><tr><td><a href="https://github.com/tirth8205/code-review-graph" target="_blank" rel="noopener">tirth8205/code-review-graph</a></td><td>2 天</td><td>29,056 → 29,350</td><td>+294</td><td>237 → 237</td><td>热度稳定，MCP 接入价值高于榜单增量</td></tr><tr><td><a href="https://github.com/zhaoxuya520/reverse-skill" target="_blank" rel="noopener">zhaoxuya520/reverse-skill</a></td><td>2 天</td><td>16,818 → 18,361</td><td>+1,543</td><td>2,446 → 2,297</td><td>高热后离榜，专业场景仍有价值</td></tr><tr><td><a href="https://github.com/uber/ADR" target="_blank" rel="noopener">uber/ADR</a></td><td>2 天</td><td>792 → 1,108</td><td>+316</td><td>148 → 354</td><td>小体量快速升温，企业安全方向值得观察</td></tr><tr><td><a href="https://github.com/livekit/agents" target="_blank" rel="noopener">livekit/agents</a></td><td>2 天</td><td>12,195 → 12,542</td><td>+347</td><td>148 → 432</td><td>语音 Agent 热度回升，但接入编码客户端较间接</td></tr></tbody></table></div>
+<p>其余重复上榜项目包括 <code>lyogavin/airllm</code>、<code>goauthentik/authentik</code>、<code>TapXWorld/ChinaTextbook</code>、<code>google/guava</code>、<code>donnemartin/system-design-primer</code>、<code>microsoft/generative-ai-for-beginners</code>、<code>Significant-Gravitas/AutoGPT</code>、<code>tailwindlabs/tailwindcss</code> 和 <code>usekaneo/kaneo</code>。它们有持续关注度，但与“直接强化 AI 客户端”主线的关联较弱。</p>
+<h2>四、S 级：优先试用</h2>
+<p>S 级标准：能直接接入主流编码 Agent，能力增益清晰，且本周热度具有持续性或项目形态足够成熟。</p>
+<h3>1. addyosmani/agent-skills · 4 天 · 持续升温</h3>
+<ul>
+<li><strong>接入形态</strong>：Skill 集合。克隆仓库后按 README 放入 Claude Code、Codex、Cursor 等客户端的技能目录，先按名称启用单个技能。</li>
+<li><strong>增强能力</strong>：把 Idea → Spec → Code → Test → QA → Ship 的生产级质量关卡变成 Agent 可重复执行的流程，适合 Web 开发、PR 审查、测试和发布。</li>
+<li><strong>评级理由</strong>：连续四天上榜且末日热度继续抬升；跨客户端、低接入成本、日常使用频率高。</li>
+<li><strong>建议</strong>：先挑代码评审或测试类技能做同一任务的前后对照，再决定是否启用完整流程，避免与团队现有规则重复。</li>
+</ul>
+<h3>2. obra/superpowers · 4 天 · 高位稳定</h3>
+<ul>
+<li><strong>接入形态</strong>：跨客户端 Skill/工作流框架，按 README 选择 Claude Code、Codex、Cursor 或 Gemini CLI 的安装方式。</li>
+<li><strong>增强能力</strong>：需求澄清、规划、测试驱动、分步实现和复盘，把软件开发方法论固化为 Agent 行为。</li>
+<li><strong>评级理由</strong>：四天持续高热，适配面广；相比单点工具，它直接改变复杂任务的交付质量。</li>
+<li><strong>建议</strong>：从计划和测试相关技能开始；检查其规则与仓库内 <code>AGENTS.md</code>、<code>CLAUDE.md</code> 或 Cursor Rules 的优先级关系。</li>
+</ul>
+<h3>3. mattpocock/skills · 3 天 · 高热略降</h3>
+<ul>
+<li><strong>接入形态</strong>：小型可组合 Skills。将需要的目录复制到客户端 <code>.agents/skills</code> 或对应技能目录，重启后按技能名调用。</li>
+<li><strong>增强能力</strong>：复用真实工程实践中的窄而明确的任务方法，特别适合 TypeScript/Web 工程和技能编写参考。</li>
+<li><strong>评级理由</strong>：三天均处于高热区；粒度小、可修改，试用和退出成本低。</li>
+<li><strong>建议</strong>：按需安装，不要整包无差别启用；先审查每个 <code>SKILL.md</code> 的工具权限和适用条件。</li>
+</ul>
+<h3>4. tirth8205/code-review-graph · 2 天 · 稳定</h3>
+<ul>
+<li><strong>接入形态</strong>：MCP + CLI。安装 Python 依赖、为仓库初始化 Tree-sitter 代码图谱，再把 MCP Server 配进支持 MCP 的客户端。</li>
+<li><strong>增强能力</strong>：为大型仓库提供持久、增量的代码关系上下文；减少无关文件读取和 token 消耗，提高 PR 评审与变更影响分析精度。</li>
+<li><strong>评级理由</strong>：上榜次数不算最高，但能力与 AI 编码客户端高度贴合，且 MCP 是标准化接入面。</li>
+<li><strong>建议</strong>：选一个中大型仓库，对同一 PR 比较接入前后的 token、引用文件数和漏报率；图谱数据仅保存在受控位置。</li>
+</ul>
+<h3>5. TencentCloud/TencentDB-Agent-Memory · 5 天 · 高位持续</h3>
+<ul>
+<li><strong>接入形态</strong>：服务 + SDK/API，已有 Agent 框架接入方式；Claude Code、Codex、Cursor、Cline 若无原生适配，需要通过插件、MCP 或自定义工具桥接。</li>
+<li><strong>增强能力</strong>：跨会话长期记忆、团队知识共享、Skill/LLM-Wiki/Code-Graph 资产治理，减少每次重新解释项目背景的成本。</li>
+<li><strong>评级理由</strong>：本周上榜最持久、总 Star 快照增量最高；记忆是多个客户端共同缺失的基础能力。</li>
+<li><strong>建议</strong>：先做单项目、只读知识库试点，明确数据保留、租户隔离和删除策略后再开放自动写入。</li>
+</ul>
+<h2>五、A 级：按场景接入</h2>
+<p>A 级标准：能力价值明确，但偏专业场景、接入工程量较大，或仅有一至三天样本需要继续观察。</p>
+<div class="table-wrap"><table><thead><tr><th>项目</th><th>上榜/趋势</th><th>接入方式</th><th>对 AI 客户端的增强</th><th>采用建议</th></tr></thead><tbody><tr><td><a href="https://github.com/cloudflare/computer" target="_blank" rel="noopener">cloudflare/computer</a></td><td>3 天，快速爆发</td><td>在 Cloudflare Workers/Durable Objects 部署，通过 API 或自定义工具适配客户端</td><td>提供持久、可审计、可恢复的 Linux 执行环境，适合长任务和真实软件操作</td><td>先用隔离账户跑无敏感数据的示例；限制网络、凭据和资源配额</td></tr><tr><td><a href="https://github.com/huangruiteng/loopx" target="_blank" rel="noopener">huangruiteng/loopx</a></td><td>3 天，明显升温</td><td>Python 3.11+ 初始化控制平面，按 README 接入 Codex/Claude Code</td><td>持久化 goal、todo、证据、预算和交接，降低长任务迷失或超预算</td><td>适合跨小时任务；先验证中断恢复和停止条件</td></tr><tr><td><a href="https://github.com/zhaoxuya520/reverse-skill" target="_blank" rel="noopener">zhaoxuya520/reverse-skill</a></td><td>2 天，高热后离榜</td><td>Skill 路由包，克隆后按 README 加载到 Claude Code、Codex、Cursor、Cline</td><td>增加 APK、二进制、前端加密和 CTF 的规范化分析流程</td><td><strong>仅限授权测试与学习</strong>；在隔离环境运行并审查命令权限</td></tr><tr><td><a href="https://github.com/google/skills" target="_blank" rel="noopener">google/skills</a></td><td>1 天，新上榜</td><td>按 README 安装所需 Skills，并配置最小权限 Google 凭据</td><td>增强 Google Cloud 运维、API 集成、资源排障和内部自动化</td><td>官方背景加分，但只有一天样本；按产品逐个启用</td></tr><tr><td><a href="https://github.com/EveryInc/compound-engineering-plugin" target="_blank" rel="noopener">EveryInc/compound-engineering-plugin</a></td><td>1 天</td><td>Claude Code 可用插件市场命令安装；其它客户端按 README 的适配方式接入</td><td>把复用知识和工程经验持续沉淀为技能，减少重复工作</td><td>先确认 Codex/Cursor 的实际支持范围，避免把“理念兼容”当作原生插件兼容</td></tr><tr><td><a href="https://github.com/Panniantong/Agent-Reach" target="_blank" rel="noopener">Panniantong/Agent-Reach</a></td><td>1 天，+1,057</td><td>Python CLI；由客户端调用命令或包装为工具/MCP</td><td>读取和搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等来源</td><td>适合调研；关注平台条款、登录态、数据来源和速率限制</td></tr><tr><td><a href="https://github.com/browser-use/video-use" target="_blank" rel="noopener">browser-use/video-use</a></td><td>1 天，+320</td><td>克隆 Python 项目，把素材目录交给 Claude Code 等编码 Agent 运行工作流</td><td>对话式剪辑、去废话、调色、淡入淡出、字幕烧录</td><td>适合内容流水线；先用副本素材检查输出和媒体授权</td></tr><tr><td><a href="https://github.com/firecrawl/pdf-inspector" target="_blank" rel="noopener">firecrawl/pdf-inspector</a></td><td>5 天，高位持续</td><td>Python、Node、WASM 或 Rust 库；可封装成 CLI/MCP 工具</td><td>快速判断扫描/文本 PDF，提取 Markdown，为 RAG 和文档问答供料</td><td>本身不是客户端插件，但封装简单；扫描件仍需 OCR 后备链路</td></tr><tr><td><a href="https://github.com/uber/ADR" target="_blank" rel="noopener">uber/ADR</a></td><td>2 天，升温</td><td>部署观测、基准测试和检测模块，接入 Agent 运行链路</td><td>检测提示注入、MCP 滥用、越权和数据泄露风险</td><td>更适合企业平台团队；先阅读架构与论文，再做旁路观测试点</td></tr></tbody></table></div>
+<h2>六、B 级：观察或作为底层能力</h2>
+<p>B 级标准：项目有价值，但更像独立 Agent、底层框架或模型运行环境，不能低成本地给现有客户端直接“加能力”。</p>
+<div class="table-wrap"><table><thead><tr><th>项目</th><th>上榜/趋势</th><th>接入方式</th><th>能力与限制</th><th>观察建议</th></tr></thead><tbody><tr><td><a href="https://github.com/esengine/DeepSeek-Reasonix" target="_blank" rel="noopener">esengine/DeepSeek-Reasonix</a></td><td>5 天，稳定</td><td>下载 Go 二进制，配置 <code>reasonix.toml</code> 和模型凭据</td><td>低成本长会话、插件和双模型；更像现有客户端的替代品，而非通用增强件</td><td>对 DeepSeek 成本敏感时单独评测，不要与主客户端共享高权限凭据</td></tr><tr><td><a href="https://github.com/PrimeIntellect-ai/prime-agent" target="_blank" rel="noopener">PrimeIntellect-ai/prime-agent</a></td><td>1 天，+2,483</td><td>Node.js/TypeScript 项目，配置模型后运行示例任务</td><td>自我改进 RLM Agent，适合长时间自主任务；新项目、停止条件和权限风险待验证</td><td>从只读仓库和小任务开始，记录循环次数、成本和可恢复性</td></tr><tr><td><a href="https://github.com/jamiepine/voicebox" target="_blank" rel="noopener">jamiepine/voicebox</a></td><td>1 天，+412</td><td>桌面应用/TTS 引擎，可通过语音输入或工具层与 MCP 感知 Agent 配合</td><td>增加本地语音输入、合成和克隆；对编码质量的增益间接</td><td>有语音工作流时再采用；声音克隆必须取得授权</td></tr><tr><td><a href="https://github.com/livekit/agents" target="_blank" rel="noopener">livekit/agents</a></td><td>2 天，热度回升</td><td><code>pip install livekit-agents</code>，接入 LiveKit 房间与 STT/LLM/TTS</td><td>构建实时语音/视频 Agent 的框架，不是编码客户端插件</td><td>适合客服、会议或语音产品，不建议只为编码助手引入整套实时媒体栈</td></tr><tr><td><a href="https://github.com/lyogavin/airllm" target="_blank" rel="noopener">lyogavin/airllm</a></td><td>3 天，峰值后回落</td><td><code>pip install airllm</code>，配置分层加载和本地模型</td><td>低显存运行大模型，可作为私有推理底座；速度、磁盘和模型许可需单测</td><td>只有明确离线/隐私需求时接到客户端的模型端点</td></tr><tr><td><a href="https://github.com/Alishahryar1/free-claude-code" target="_blank" rel="noopener">Alishahryar1/free-claude-code</a></td><td>1 天，+278</td><td>Python 代理服务，配置自有合规模型供应商</td><td>可把多种供应商接到 Claude Code/Codex/Pi；涉及代理兼容和服务条款风险</td><td>仅使用合规渠道，核对客户端条款、密钥存储和数据去向后再测试</td></tr></tbody></table></div>
+<h2>七、推荐落地顺序</h2>
+<h3>方案 A：个人开发者，半天内见效</h3>
+<ol>
+<li>在 <code>mattpocock/skills</code> 与 <code>addyosmani/agent-skills</code> 中各选一个窄技能，不要一次安装全部。</li>
+<li>用同一个真实任务比较安装前后：需求遗漏、测试覆盖、返工次数和 token 消耗。</li>
+<li>保留有效技能并按自己的技术栈裁剪；没有稳定收益的立即移除。</li>
+</ol>
+<h3>方案 B：中大型仓库，一周试点</h3>
+<ol>
+<li>部署 <code>code-review-graph</code>，只给一个测试仓库建立图谱并以 MCP 接入客户端。</li>
+<li>接入 <code>TencentDB-Agent-Memory</code> 的只读知识资产，禁止自动写入和跨项目共享。</li>
+<li>对三到五个 PR 记录评审引用准确率、token、延迟和漏报；达标后再扩大范围。</li>
+</ol>
+<h3>方案 C：长任务与自动执行</h3>
+<ol>
+<li>用 <code>loopx</code> 保存目标、证据、预算和停止条件。</li>
+<li>需要远程执行时，再把 <code>cloudflare/computer</code> 作为隔离执行环境接入。</li>
+<li>在生产化之前补上 <code>uber/ADR</code> 或等价观测/检测层，默认最小权限，不向 Agent 暴露长期凭据。</li>
+</ol>
+<h2>八、下周观察清单</h2>
+<ul>
+<li><code>addyosmani/agent-skills</code> 能否继续升温并保持跨客户端安装体验一致。</li>
+<li><code>mattpocock/skills</code> 在高热之后是稳定留榜还是快速回落。</li>
+<li><code>google/skills</code> 是否从单日新秀变成 Google 生态的长期技能入口。</li>
+<li><code>cloudflare/computer</code> 是否出现 MCP/标准工具适配，降低现有客户端接入成本。</li>
+<li><code>loopx</code> 与 <code>PrimeIntellect-ai/prime-agent</code> 能否证明长任务的可恢复性、成本控制和停止可靠性。</li>
+<li><code>TencentDB-Agent-Memory</code> 是否补齐 Claude Code、Codex、Cursor、Cline 的直接适配和清晰的数据治理方案。</li>
+</ul>
+<hr>
+<p><em>生成日期：2026-08-09 · 安全、逆向与网络类项目仅限合法授权场景；接入第三方工具前应审查代码、权限、许可证、凭据处理和服务条款。</em></p></main>
+<footer class="site-footer">GitHub 热门项目情报站 · 自动生成于 undefined</footer>
+<script src="../assets/vendor/jspdf.umd.min.js"></script>
+<script src="../assets/vendor/html2canvas.min.js"></script>
+<script src="../assets/vendor/xlsx.full.min.js"></script>
+<script src="../assets/vendor/pptxgen.bundle.js"></script>
+<script src="../assets/export.js"></script>
+<script>
+(function () {
+  var last = null;
+  function check() {
+    fetch('../version.json', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (v) {
+        if (!v || !v.updated) return;
+        if (last && v.updated !== last) location.reload();
+        last = v.updated;
+      })
+      .catch(function () {});
+  }
+  check();
+  setInterval(check, 60000);
+})();
+</script></body>
+</html>
