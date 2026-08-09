@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub 每日热门项目日报（2026-08-10）</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="report-page">
+<header class="report-top">
+  <a class="back" href="../index.html">← 返回首页</a>
+  <span class="badge daily">📄 每日日报</span>
+  <span class="date">2026-08-10</span>
+</header>
+<div class="export-toolbar">
+  <span class="export-label">导出本报告：</span>
+  <button id="export-pdf" class="export-btn">PDF</button>
+  <button id="export-excel" class="export-btn">Excel</button>
+  <button id="export-ppt" class="export-btn">PPT</button>
+  <span id="export-status" class="export-status"></span>
+</div>
+<main class="report-main"><h1>GitHub 每日热门项目日报（2026-08-10）</h1>
+<blockquote>数据来源：GitHub Trending（<a href="https://github.com/trending?since=daily" target="_blank" rel="noopener">daily</a>）+ GitHub REST API。 采集时间：2026-08-10（Asia/Shanghai）。Trending 的“今日新增 Star”是页面快照；总 Star、Fork、许可证和更新时间来自 API 同时刻快照，可能随时间变化。</blockquote>
+<h2>今日概览</h2>
+<ul>
+<li>今日榜单共 12 个项目，按 Trending 页面顺序列出；今日新增 Star 范围为 <strong>59–2,319</strong>。</li>
+<li>热点仍集中在 AI 编码 Agent/Skills（prime-agent、agency-agents、agent-skills、google/skills、t3code），同时有代码知识图谱、天气预测、量化分析、身份认证、图像生成和法律 Agent 评测等方向。</li>
+<li>API 访问使用本机 Git Credential Manager 中的 GitHub 凭据；报告不记录令牌。总 Star 是 API 抓取时的值，不等同于今日新增量。</li>
+</ul>
+<h2>榜单速览</h2>
+<div class="table-wrap"><table><thead><tr><th>排名</th><th>项目</th><th>语言</th><th>总 Star</th><th>今日新增</th><th>许可证</th></tr></thead><tbody><tr><td>1</td><td><a href="https://github.com/PrimeIntellect-ai/prime-agent" target="_blank" rel="noopener">PrimeIntellect-ai/prime-agent</a></td><td>TypeScript</td><td>10,931</td><td><strong>+2,319</strong></td><td>MIT</td></tr><tr><td>2</td><td><a href="https://github.com/vitali87/code-graph-rag" target="_blank" rel="noopener">vitali87/code-graph-rag</a></td><td>Python</td><td>2,954</td><td>+59</td><td>MIT</td></tr><tr><td>3</td><td><a href="https://github.com/msitarzewski/agency-agents" target="_blank" rel="noopener">msitarzewski/agency-agents</a></td><td>Shell</td><td>140,604</td><td>+932</td><td>MIT</td></tr><tr><td>4</td><td><a href="https://github.com/pranshuparmar/witr" target="_blank" rel="noopener">pranshuparmar/witr</a></td><td>Go</td><td>20,600</td><td>+342</td><td>Apache-2.0</td></tr><tr><td>5</td><td><a href="https://github.com/google-deepmind/weathernext" target="_blank" rel="noopener">google-deepmind/weathernext</a></td><td>Python</td><td>7,056</td><td>+105</td><td>Apache-2.0</td></tr><tr><td>6</td><td><a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">addyosmani/agent-skills</a></td><td>JavaScript</td><td>85,091</td><td>+670</td><td>MIT</td></tr><tr><td>7</td><td><a href="https://github.com/ZhuLinsen/daily_stock_analysis" target="_blank" rel="noopener">ZhuLinsen/daily_stock_analysis</a></td><td>Python</td><td>61,150</td><td>+287</td><td>MIT</td></tr><tr><td>8</td><td><a href="https://github.com/goauthentik/authentik" target="_blank" rel="noopener">goauthentik/authentik</a></td><td>Python</td><td>24,246</td><td>+312</td><td>NOASSERTION（API）</td></tr><tr><td>9</td><td><a href="https://github.com/google/skills" target="_blank" rel="noopener">google/skills</a></td><td>Python</td><td>17,196</td><td>+532</td><td>Apache-2.0</td></tr><tr><td>10</td><td><a href="https://github.com/Comfy-Org/ComfyUI" target="_blank" rel="noopener">Comfy-Org/ComfyUI</a></td><td>Python</td><td>125,454</td><td>+333</td><td>GPL-3.0</td></tr><tr><td>11</td><td><a href="https://github.com/harveyai/harvey-labs" target="_blank" rel="noopener">harveyai/harvey-labs</a></td><td>Python</td><td>803</td><td>+87</td><td>MIT</td></tr><tr><td>12</td><td><a href="https://github.com/pingdotgg/t3code" target="_blank" rel="noopener">pingdotgg/t3code</a></td><td>TypeScript</td><td>17,630</td><td>+208</td><td>MIT</td></tr></tbody></table></div>
+<h2>项目详解</h2>
+<h3>1. PrimeIntellect-ai/prime-agent</h3>
+<ul>
+<li><strong>是什么</strong>：面向编码工作流和长时间自主任务的自我改进 RLM Agent，提供 TUI、持久 Goal、子 Agent 通信、心跳/计划和可控 autonomous 模式。</li>
+<li><strong>作用</strong>：把一次性编码对话变成长任务会话；可以保留上下文、周期性重新进入任务，并把复盘结果沉淀为 prompt、skill 或 subagent 规范。</li>
+<li><strong>适用场景</strong>：长时间评测、后台代码迁移、持续测试修复、需要人工质量门禁的 Agent 实验。</li>
+<li><strong>快速上手</strong>：macOS/Linux 执行 <code>curl -fsSL https://app.primeintellect.ai/prime-agent/install.sh | sh</code>，然后在目标仓库目录启动 <code>prime-agent</code>；先阅读 quickstart 并配置模型凭据。</li>
+<li><strong>对 AI 客户端的价值</strong>：可作为 Codex/Claude Code 外部的长任务编排层；重点验证停止条件、预算和权限边界。</li>
+<li><strong>注意</strong>：安装脚本和 Agent 会执行命令、读写工作区并可能联网，生产环境应审阅脚本、使用隔离目录和最小权限。</li>
+</ul>
+<h3>2. vitali87/code-graph-rag</h3>
+<ul>
+<li><strong>是什么</strong>：用 Tree-sitter、多语言 AST、知识图谱和向量检索构建 monorepo RAG，带 Memgraph/Qdrant 后端并可作为 MCP Server。</li>
+<li><strong>作用</strong>：让 Agent 按调用关系、符号和依赖理解代码，而不是只做文本相似度搜索；支持查询、定位和辅助编辑大型代码库。</li>
+<li><strong>适用场景</strong>：跨语言单体仓库导航、影响面分析、代码问答、重构前依赖梳理、为编码客户端提供结构化上下文。</li>
+<li><strong>快速上手</strong>：<code>uv tool install &quot;code-graph-rag[treesitter-full,semantic]&quot;</code>（或 pipx），准备 Docker、<code>cmake</code>、<code>ripgrep</code>；执行 <code>cgr daemon up</code>，再用 <code>cgr start --repo-path /path/to/repo --update-graph</code> 建图和查询。</li>
+<li><strong>对 AI 客户端的价值</strong>：可接到 MCP 工具层，补足客户端的跨文件/跨语言检索能力。</li>
+<li><strong>注意</strong>：索引可能包含私有源码；限制 Memgraph/Qdrant 的监听地址并规划数据清理，避免把源码发送到未经批准的模型端点。</li>
+</ul>
+<h3>3. msitarzewski/agency-agents</h3>
+<ul>
+<li><strong>是什么</strong>：一套带角色、流程和交付物规范的 AI 专家 Agent Markdown 提示包，覆盖前端、后端、营销、社区等团队角色。</li>
+<li><strong>作用</strong>：把重复的角色设定和工作方法变成可复用文件，统一不同客户端的输出风格和检查清单。</li>
+<li><strong>适用场景</strong>：产品原型、代码评审、文档/营销内容、社区运营以及多角色协作实验。</li>
+<li><strong>快速上手</strong>：推荐安装桌面 App；命令行可执行 <code>./scripts/install.sh --tool claude-code</code>，或把所需类别复制到对应 Agent 目录；也可直接阅读单个 <code>.md</code> 角色文件作为提示模板。</li>
+<li><strong>对 AI 客户端的价值</strong>：仓库明确支持 Claude Code、Cursor、Codex、Gemini CLI、OpenCode 等，适合建立团队角色库。</li>
+<li><strong>注意</strong>：这些文件是提示和流程，不是安全沙箱；安装到客户端后仍需审查其命令、联网和文件操作权限。</li>
+</ul>
+<h3>4. pranshuparmar/witr</h3>
+<ul>
+<li><strong>是什么</strong>：跨平台 CLI/TUI，用进程、端口、容器或文件反向追踪“是谁启动了它”，展示完整父子链。</li>
+<li><strong>作用</strong>：把“这个端口/服务为什么在运行”转化为可读的进程树，支持故障排查和机器可读 JSON 输出。</li>
+<li><strong>适用场景</strong>：排查 systemd、Docker、Kubernetes、Windows 服务、开发环境残留进程和安全事件线索。</li>
+<li><strong>快速上手</strong>：Unix 可执行 <code>curl -fsSL https://raw.githubusercontent.com/pranshuparmar/witr/main/install.sh | bash</code>；也可用 Homebrew、Winget 等包管理器安装，随后运行 <code>witr --help</code> 查看按 PID/端口查询方式。</li>
+<li><strong>对 AI 客户端的价值</strong>：JSON 输出可作为诊断工具交给 Agent，减少凭经验猜测进程来源。</li>
+<li><strong>注意</strong>：诊断结果依赖当前用户可见的进程和容器权限；共享主机上应脱敏命令行参数和环境变量。</li>
+</ul>
+<h3>5. google-deepmind/weathernext</h3>
+<ul>
+<li><strong>是什么</strong>：Google DeepMind 的 WeatherNext 天气预测研究代码与模型，包含 WeatherNext 2、Cyclones 等模型和公共演示 Notebook。</li>
+<li><strong>作用</strong>：生成中短期天气/气旋预测，用于研究和对比机器学习天气模型。</li>
+<li><strong>适用场景</strong>：气象科研、灾害风险实验、气候数据分析和模型评测，不是直接面向生产调度的气象服务。</li>
+<li><strong>快速上手</strong>：打开仓库的 Colab <code>docs/weathernext2/wn2_demo.ipynb</code>；源码安装可用 <code>pip install git+https://github.com/google-deepmind/weathernext.git@v0.3.0</code>，再从 Google Cloud Bucket 下载模型权重。</li>
+<li><strong>对 AI 客户端的价值</strong>：适合让 Agent 自动运行 Notebook、整理预测结果或编排数据实验。</li>
+<li><strong>注意</strong>：README 标注研究代码、API 可能变更；TPU/GPU 资源和模型权重许可需单独确认，不能把预测当作无条件的安全决策依据。</li>
+</ul>
+<h3>6. addyosmani/agent-skills</h3>
+<ul>
+<li><strong>是什么</strong>：面向 AI 编码 Agent 的生产级工程 Skills 集合，包含代码评审、测试、发布、可观测性和文档等工作流。</li>
+<li><strong>作用</strong>：把工程实践固化为可发现、可组合的技能，帮助 Agent 在实现前后执行一致的质量检查。</li>
+<li><strong>适用场景</strong>：团队编码规范、PR 评审、CI/CD、迁移、发布前检查以及 Codex/Cursor/Claude Code 的能力扩展。</li>
+<li><strong>快速上手</strong>：<code>npx skills add addyosmani/agent-skills</code> 安装全部技能；先用 <code>--list</code> 浏览，再用 <code>--skill code-review-and-quality</code> 选择单项。</li>
+<li><strong>对 AI 客户端的价值</strong>：仓库列出 Codex、Cursor、Copilot、Cline 等 70+ 客户端适配方式，可作为本项目日报和工程自动化的技能来源。</li>
+<li><strong>注意</strong>：技能会影响 Agent 的行为和命令选择；团队应固定版本、审查 SKILL.md，并在 CI 中保留人工审批。</li>
+</ul>
+<h3>7. ZhuLinsen/daily_stock_analysis</h3>
+<ul>
+<li><strong>是什么</strong>：LLM 驱动的多市场股票分析系统，整合行情、新闻、决策看板和自动推送。</li>
+<li><strong>作用</strong>：定时抓取数据并生成研究摘要、指标和报告，支持 A 股等市场的个人研究流程。</li>
+<li><strong>适用场景</strong>：投资研究原型、策略观察、日报自动化和数据源/模型编排实验。</li>
+<li><strong>快速上手</strong>：推荐 Fork 后用 GitHub Actions 配置 Secrets；本地可执行 <code>git clone ... &amp;&amp; pip install -r requirements.txt</code>，复制 <code>.env.example</code> 为 <code>.env</code>，再运行 <code>python main.py</code>（调试用 <code>--debug</code>）。</li>
+<li><strong>对 AI 客户端的价值</strong>：可作为 Agent 调用数据源、生成报告和通知的参考流水线。</li>
+<li><strong>注意</strong>：金融数据可能延迟或错误；API 密钥只能放在 Secrets/环境变量中，所有输出仅供研究，不构成投资建议。</li>
+</ul>
+<h3>8. goauthentik/authentik</h3>
+<ul>
+<li><strong>是什么</strong>：开源身份提供商和反向代理，支持 OAuth2/OIDC、SAML、LDAP、MFA、应用代理和 Kubernetes 集成。</li>
+<li><strong>作用</strong>：为内部应用、开发工具和 Agent 服务提供统一登录、单点登录、授权策略和身份生命周期管理。</li>
+<li><strong>适用场景</strong>：自托管 SSO、家庭实验室、企业内网、MCP/工具网关前的身份与访问控制。</li>
+<li><strong>快速上手</strong>：小型/测试环境按官方 Docker Compose 文档部署；大型环境使用 Helm/Kubernetes。首次部署后创建管理员、配置 OIDC Provider，并为每个客户端设置最小 Scope/Redirect URI。</li>
+<li><strong>对 AI 客户端的价值</strong>：可放在内部 Agent 工具和 Web 控制台前，统一登录与审计。</li>
+<li><strong>注意</strong>：生产部署必须启用 TLS、备份数据库、限制管理面来源并配置 MFA；API 返回许可证为 <code>NOASSERTION</code>，采用前应核对仓库 LICENSE 与版本条款。</li>
+</ul>
+<h3>9. google/skills</h3>
+<ul>
+<li><strong>是什么</strong>：Google 官方产品和技术的 Agent Skills 仓库，覆盖 Google Cloud 等场景的操作知识与流程。</li>
+<li><strong>作用</strong>：让支持 Skills 的客户端按 Google 官方上下文完成云资源运维、API 集成和排障任务。</li>
+<li><strong>适用场景</strong>：Google Cloud 配置、资源诊断、文档查询、产品自动化和团队 runbook 标准化。</li>
+<li><strong>快速上手</strong>：运行 <code>npx skills add google/skills</code>，按安装器选择所需技能；先在只读项目和测试账号中验证，再授予写权限。</li>
+<li><strong>对 AI 客户端的价值</strong>：官方来源适合补齐 Google Cloud 专业知识，但需与客户端当前 Skills 加载机制匹配。</li>
+<li><strong>注意</strong>：云凭据和项目权限不应写入技能文件；使用 Workload Identity/最小 IAM，并对生成的 gcloud 命令执行前复核。</li>
+</ul>
+<h3>10. Comfy-Org/ComfyUI</h3>
+<ul>
+<li><strong>是什么</strong>：基于节点图的模块化扩散模型 GUI、API 和后端，支持 Stable Diffusion 工作流及大量自定义节点。</li>
+<li><strong>作用</strong>：用可视化节点组合文生图、图生图、批处理和自定义模型推理，并可通过 API 自动化。</li>
+<li><strong>适用场景</strong>：本地/私有图像生成、工作流实验、批量素材生产和 Agent 驱动的视觉管线。</li>
+<li><strong>快速上手</strong>：Windows/macOS 新用户优先使用官方 Desktop App；命令行可 <code>pip install comfy-cli</code> 后执行 <code>comfy install</code>。手动安装时按 README 放置 checkpoints、VAE 等模型文件。</li>
+<li><strong>对 AI 客户端的价值</strong>：API 和节点图便于让 Agent 生成或修改可复现的视觉工作流。</li>
+<li><strong>注意</strong>：模型和自定义节点有独立许可与供应链风险；不要直接运行不信任的节点，限制 Web/API 暴露并固定 CUDA/PyTorch 版本。</li>
+</ul>
+<h3>11. harveyai/harvey-labs</h3>
+<ul>
+<li><strong>是什么</strong>：评估和改进法律工作 Agent 能力的基准与实验框架，带任务、工具适配器、评分、报告和 sweep。</li>
+<li><strong>作用</strong>：用可重复任务和全通过（all-pass）标准比较 Agent 在法律数据室、尽调等流程中的表现。</li>
+<li><strong>适用场景</strong>：法律 Agent 评测、模型/工具对比、回归测试、研究报告和企业上线前质量门禁。</li>
+<li><strong>快速上手</strong>：从 README 链接的 <code>docs/tutorial.md</code> 开始，按教程完成数据室任务、运行 Agent、评分并查看报告/对比面板；先使用无敏感样例。</li>
+<li><strong>对 AI 客户端的价值</strong>：可把评测 harness 接到自有 Agent，量化提示、工具和模型改动是否真的提升结果。</li>
+<li><strong>注意</strong>：法律任务输出不等于法律意见；真实案件数据需要脱敏、访问控制和专业人员复核，评测分数也不代表合规性。</li>
+</ul>
+<h3>12. pingdotgg/t3code</h3>
+<ul>
+<li><strong>是什么</strong>：本地 Web 控制台和后端，用于统一启动、观察和交互多个编码 Agent，支持 Codex、Claude、Cursor、Grok Build 和 OpenCode。</li>
+<li><strong>作用</strong>：把不同 CLI Agent 的会话、任务和输出放进一个可视化界面，适合同时管理多个工作区。</li>
+<li><strong>适用场景</strong>：个人多模型编码、团队实验、长任务观察和 Agent 运行记录整理。</li>
+<li><strong>快速上手</strong>：Node.js 需满足 22.16+/23.11+/24.10+；安装并登录至少一个提供商后，直接运行 <code>npx t3@latest</code> 启动本地服务，再按 README 配置桌面版或 <code>vp</code> 依赖。</li>
+<li><strong>对 AI 客户端的价值</strong>：适合作为 Codex 等 CLI 的轻量编排/观察层，但不替代各提供商的认证和权限控制。</li>
+<li><strong>注意</strong>：项目 README 明确处于早期阶段；本地服务可能接触源码和模型凭据，绑定本机地址并在升级前备份配置。</li>
+</ul>
+<h2>今日值得优先试用</h2>
+<ol>
+<li><strong>想增强编码 Agent 的长任务能力</strong>：先试 <code>prime-agent</code>，再用 <code>agent-skills</code>/<code>google/skills</code> 补齐流程技能。</li>
+<li><strong>想让 Agent 理解大型代码库</strong>：<code>code-graph-rag</code> 的 AST + 图谱 + MCP 路线最直接，但要先规划源码索引隔离。</li>
+<li><strong>想统一多个编码客户端</strong>：<code>t3code</code> 可快速体验本地控制台；由于项目较早，建议从非生产仓库开始。</li>
+<li><strong>想做可复现视觉工作流</strong>：ComfyUI 的节点图和 API 适合自动化，但应单独审核模型和自定义节点许可。</li>
+</ol>
+<h2>采集与合规说明</h2>
+<ul>
+<li>Trending 页面没有稳定的官方 REST 端点，本报告只将页面公开榜单用于排名和当日新增量；项目详情通过 <code>/repos/{owner}/{repo}</code> API 查询。</li>
+<li>API 使用本机 Git Credential Manager 的 GitHub 凭据完成认证，令牌未写入报告、日志或仓库。</li>
+<li>安全、逆向、扫描、金融和法律相关项目仅限授权测试、个人研究或合规业务；部署前请审阅许可证、凭据处理和网络暴露面。</li>
+</ul>
+<p><em>日报生成时间：2026-08-10 · 由 Codex 自动整理</em></p></main>
+<footer class="site-footer">GitHub 热门项目情报站 · 自动生成于 undefined</footer>
+<script src="../assets/vendor/jspdf.umd.min.js"></script>
+<script src="../assets/vendor/html2canvas.min.js"></script>
+<script src="../assets/vendor/xlsx.full.min.js"></script>
+<script src="../assets/vendor/pptxgen.bundle.js"></script>
+<script src="../assets/export.js"></script>
+<script>
+(function () {
+  var last = null;
+  function check() {
+    fetch('../version.json', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (v) {
+        if (!v || !v.updated) return;
+        if (last && v.updated !== last) location.reload();
+        last = v.updated;
+      })
+      .catch(function () {});
+  }
+  check();
+  setInterval(check, 60000);
+})();
+</script></body>
+</html>
