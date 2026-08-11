@@ -8,13 +8,14 @@ node scripts/build.js
 if ($LASTEXITCODE -ne 0) { throw "构建失败：node scripts/build.js 返回 $LASTEXITCODE" }
 
 Write-Output "[2/3] 提交变更..."
-$changed = @(git status --porcelain)
+$publishPaths = @('index.html', 'version.json', 'reports')
+$changed = @(git status --porcelain -- $publishPaths)
 if ($changed.Count -gt 0) {
-  git add -A
+  git add -A -- $publishPaths
   if ($LASTEXITCODE -ne 0) { throw "git add 失败：$LASTEXITCODE" }
-  git commit -m "自动更新报告 $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
+  git commit --only -m "自动更新报告 $(Get-Date -Format 'yyyy-MM-dd HH:mm')" -- $publishPaths
   if ($LASTEXITCODE -ne 0) { throw "git commit 失败：$LASTEXITCODE（可能权限不足，请用管理员权限运行）" }
-  Write-Output "已提交：$($changed.Count) 个变更"
+  Write-Output "已提交报告发布范围内的变更：$($changed.Count) 项"
 } else {
   Write-Output "没有新变更，跳过提交。"
 }
