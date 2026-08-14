@@ -10,18 +10,17 @@ try {
   $today = Get-Date -Format 'yyyy-MM-dd'
   $todayFile = "$root\reports\raw\GitHub每日热门日报_$today.md"
   if (Test-Path $todayFile) {
-    Log "今日报告已存在，跳过生成（幂等）"
-    powershell -ExecutionPolicy Bypass -File "$root\scripts\sync-obsidian.ps1" | Out-Null
-    return
+    Log "[1/3] 今日报告已存在并验证，跳过重复生成"
+  } else {
+    Log "[1/3] 生成报告（Codex 自动收集并分析，模型: $ReportModel）..."
+    $prompt = Get-Content -LiteralPath "$root\scripts\daily-report-prompt.txt" -Encoding UTF8 -Raw
+    $codexExitCode = Invoke-ReportCodex -Root $root -Prompt $prompt -OutputPath "$root\work\codex-daily.out"
+    if ($codexExitCode -ne 0) { throw "Codex 生成日报失败，退出码: $codexExitCode；详见 $root\work\codex-daily.out" }
+    if (-not (Test-Path -LiteralPath $todayFile) -or (Get-Item -LiteralPath $todayFile).Length -eq 0) {
+      throw "Codex 返回成功，但未生成有效的今日日报: $todayFile"
+    }
+    Log "[1/3] 完成并验证日报文件"
   }
-  Log "[1/3] 生成报告（Codex 自动收集并分析，模型: $ReportModel）..."
-  $prompt = Get-Content -LiteralPath "$root\scripts\daily-report-prompt.txt" -Encoding UTF8 -Raw
-  $codexExitCode = Invoke-ReportCodex -Root $root -Prompt $prompt -OutputPath "$root\work\codex-daily.out"
-  if ($codexExitCode -ne 0) { throw "Codex 生成日报失败，退出码: $codexExitCode；详见 $root\work\codex-daily.out" }
-  if (-not (Test-Path -LiteralPath $todayFile) -or (Get-Item -LiteralPath $todayFile).Length -eq 0) {
-    throw "Codex 返回成功，但未生成有效的今日日报: $todayFile"
-  }
-  Log "[1/3] 完成并验证日报文件"
   Log "[2/3] 同步网站..."
   & powershell -NoProfile -ExecutionPolicy Bypass -File "$root\scripts\publish.ps1" | Out-Null
   if ($LASTEXITCODE -ne 0) { throw "网站发布失败，退出码: $LASTEXITCODE" }
