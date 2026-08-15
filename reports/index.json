@@ -1,6 +1,17 @@
 {
-  "updated": "2026-08-14T06:13:28.781Z",
+  "updated": "2026-08-15T00:06:23.540Z",
   "items": [
+    {
+      "name": "GitHub每日热门日报_2026-08-15.md",
+      "html": "GitHub每日热门日报_2026-08-15.html",
+      "type": "daily",
+      "label": "每日日报",
+      "icon": "📄",
+      "date": "2026-08-15",
+      "title": "GitHub 每日热门项目日报（2026-08-15）",
+      "summary": "抓取时间：2026-08-15 08:03（UTC+8） 数据来源：[GitHub Daily Trending](https://github.com/trending?since=daily)、GitHub REST API 与各仓库 README。 统计口径：从仓库 URL 提取当前 `owner/reposit",
+      "source": "C:\\Users\\Administrator\\Documents\\codex项目\\GitHub热门项目\\GitHub每日热门日报_2026-08-15.md"
+    },
     {
       "name": "GitHub每日热门日报_2026-08-14.md",
       "html": "GitHub每日热门日报_2026-08-14.html",
