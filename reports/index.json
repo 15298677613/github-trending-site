@@ -1,6 +1,17 @@
 {
-  "updated": "2026-08-16T00:45:05.226Z",
+  "updated": "2026-08-17T01:52:10.355Z",
   "items": [
+    {
+      "name": "GitHub每日热门日报_2026-08-17.md",
+      "html": "GitHub每日热门日报_2026-08-17.html",
+      "type": "daily",
+      "label": "每日日报",
+      "icon": "📄",
+      "date": "2026-08-17",
+      "title": "GitHub 每日热门项目日报（2026-08-17）",
+      "summary": "抓取时间：2026-08-17 09:48（UTC+8） 数据来源：[GitHub Trending Daily](https://github.com/trending?since=daily)、GitHub 官方语言日榜、GitHub REST API、各仓库 README/官方手册。 口径说明：“今日新增 Sta",
+      "source": "C:\\Users\\Administrator\\Documents\\codex项目\\GitHub热门项目\\GitHub每日热门日报_2026-08-17.md"
+    },
     {
       "name": "GitHub每日热门日报_2026-08-16.md",
       "html": "GitHub每日热门日报_2026-08-16.html",
