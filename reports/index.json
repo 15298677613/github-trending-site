@@ -1,6 +1,17 @@
 {
-  "updated": "2026-08-17T01:52:10.355Z",
+  "updated": "2026-08-17T01:53:26.504Z",
   "items": [
+    {
+      "name": "GitHub每周潜力项目汇总_2026-08-17.md",
+      "html": "GitHub每周潜力项目汇总_2026-08-17.html",
+      "type": "weekly",
+      "label": "每周汇总",
+      "icon": "📊",
+      "date": "2026-08-17",
+      "title": "GitHub 每周潜力项目汇总（2026-08-11—2026-08-17）",
+      "summary": "周期结束日：2026-08-17（Asia/Shanghai） 实际输入：2026-08-11 至 2026-08-16 共 6 份日报；2026-08-17 日报尚不存在，因此不推算该日榜单。 统计口径：先按小写 `owner/repository` 生成 `canonical_key`，同一项目在同一日报最多计一次",
+      "source": "C:\\Users\\Administrator\\Documents\\codex项目\\GitHub热门项目\\GitHub每周潜力项目汇总_2026-08-17.md"
+    },
     {
       "name": "GitHub每日热门日报_2026-08-17.md",
       "html": "GitHub每日热门日报_2026-08-17.html",
