@@ -1,6 +1,17 @@
 {
-  "updated": "2026-08-17T01:53:26.504Z",
+  "updated": "2026-08-18T01:26:18.259Z",
   "items": [
+    {
+      "name": "GitHub每日热门日报_2026-08-18.md",
+      "html": "GitHub每日热门日报_2026-08-18.html",
+      "type": "daily",
+      "label": "每日日报",
+      "icon": "📄",
+      "date": "2026-08-18",
+      "title": "GitHub 每日热门项目日报（2026-08-18）",
+      "summary": "抓取时间：2026-08-18 09:23（UTC+8） 数据来源：[GitHub Trending Daily](https://github.com/trending?since=daily)、GitHub REST API、各仓库 README/官方手册。 口径说明：“今日新增 Star”来自 Trending ",
+      "source": "C:\\Users\\Administrator\\Documents\\codex项目\\GitHub热门项目\\GitHub每日热门日报_2026-08-18.md"
+    },
     {
       "name": "GitHub每周潜力项目汇总_2026-08-17.md",
       "html": "GitHub每周潜力项目汇总_2026-08-17.html",
